@@ -1,37 +1,95 @@
 <div id="content" fxLayout="row" fxLayoutAlign="center center">
   <aside fxFlex="33" class="sidebar mat-elevation-z4">
+
+    <!-- HEADER PHOTO -->
     <div id="photo">
       <div id="image">
-        <img src="http://demo.deviserweb.com/cv/assets/images/profile-img.jpg" />
+        <img src="./assets/img/profile-img.jpg" />
       </div>
       <div id="identity" fxFlexOffset="25">
         <h2>Vendeville Antoine</h2>
         <span>Ingénieur informatique</span>
       </div>
     </div>
+
+    <!-- DESCRIPTION -->
     <div class="item-informations" fxLayout="row" fxLayoutAlign="start start" >
       <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
           <mat-icon >person</mat-icon>
       </div>
-      <div class="content-text border-bottom">
+      <div fxFlex class="content-text border-bottom">
         <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua . Ld do eiusmod tempor incididunt ut labore et dolore magna aliqua
         </p>
       </div>
     </div>
-    <div>
-      PHONE
+
+    <!-- TELEPHONE -->
+    <div class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >phone</mat-icon>
+        </div>
+        <div fxFlex class="content-text border-bottom">
+            <div class="phone-number">
+                <h4><a href="tel:555-555-5555">(111)-333-4444</a></h4> <!-- Number -->             
+                <span>mobile</span> 
+            </div>
+            <div class="phone-number">
+                <h4><a href="tel:555-555-5555">(121)-323-3494</a></h4> <!-- Number -->
+                <span>work</span> 
+            </div>
+        </div>
     </div>
-    <div>
-      MAIL 
+
+    <!-- CONTACT -->
+    <div class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >email</mat-icon>
+        </div>
+        <div fxFlex class="content-text border-bottom">
+            <div class="mail">
+                <h4><a href="mailto:someone@example.com">mail@alrayhan.com</a></h4>
+                <span>personnel</span> 
+            </div>
+            <div class="mail">
+                <h4><a href="mailto:someone@example.com">mail@alrayhan.com</a></h4>
+                <span>work</span> 
+            </div>
+        </div> 
     </div>
-    <div>
-      ADDRESSE
+
+    <!-- ADRESSE -->
+    <div class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >home</mat-icon>
+        </div>
+        <div fxFlex class="content-text border-bottom">
+          <div class="address" style="margin-bottom:0;"> 
+            <h4>
+                24 Golden Tower <span>(2nd floor)</span><br>
+                Amborkhana, Sylhet.<br>
+                <span>SYL-3RF87W</span>
+              </h4>
+          </div>
+        </div>
     </div>
-    <div>
-      SKILLS
+
+    <!-- COMPETENCES -->
+    <div class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >equalizer</mat-icon>
+        </div>
+        <div fxFlex class="content-text skill-content">
+          <h3>Professional Skills</h3>
+          <span>Angular</span>
+          <app-progress [percent]="'80'"></app-progress>
+          <span>Angular 2</span>
+          <app-progress [percent]="'20'"></app-progress>
+        </div>
     </div>
   </aside>
+
+
   <div fxFlex="66">
     <section>
 

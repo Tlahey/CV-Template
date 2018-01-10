@@ -1,0 +1,27 @@
+div{
+    &.progress{
+
+        height: 2px;
+        overflow: visible;
+        display: block;
+        width: 100%;
+        background-color: #4783c2;
+        border-radius: 2px;
+        margin: 0.5rem 0 1rem 0;
+
+        .determinate{
+            background-color: #ffffff;
+            height:100%;
+            position: relative;
+            .circle{
+                position: absolute;
+                border-radius: 50%;
+                height:12px;
+                width:12px;
+                background-color: white;
+                top: -4px;
+                right: 0px;
+            }
+        }
+    }
+}
