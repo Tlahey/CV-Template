@@ -1,9 +1,9 @@
 {
     "me": {
-        "photoUrl": "",
-        "firstName": "",
-        "lastName": "",
-        "job": ""
+        "photoUrl": "./assets/img/profile-img.jpg",
+        "firstName": "Vendeville",
+        "lastName": "Antoine",
+        "job": "Ingénieur informatique"
     },
     "description":{
         "icon": "",
@@ -24,7 +24,10 @@
         "zipCode": ""
     },
     "skills":[{
-        "skillName": "",
-        "progress": 0 
+        "skillName": "Angular",
+        "progress": 80
+    },{
+        "skillName": "Angular 2+",
+        "progress": 15
     }]
 }

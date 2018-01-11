@@ -4,11 +4,11 @@
     <!-- HEADER PHOTO -->
     <div id="photo" [@fadeInOut]>
       <div id="image">
-        <img src="./assets/img/profile-img.jpg" />
+        <img [src]="results.me.photoUrl" />
       </div>
       <div id="identity" fxFlexOffset="25">
-        <h2>Vendeville Antoine</h2>
-        <span>Ingénieur informatique</span>
+        <h2>{{ results.me.firstName }} {{results.me.lastName}}</h2>
+        <span>{{ results.me.job }}</span>
       </div>
     </div>
 
@@ -81,9 +81,9 @@
         </div>
         <div fxFlex class="content-text skill-content">
           <h3>Professional Skills</h3>
-          <div *ngFor="let item of [0,1,2,3,4,5]">
-              <span>Angular {{ item }}</span>
-              <app-progress [percent]="random()"></app-progress>
+          <div *ngFor="let skill of results.skills" >
+              <span>{{ skill.skillName }}</span>
+              <app-progress [percent]="skill.progress"></app-progress>
           </div>
         </div>
     </div>

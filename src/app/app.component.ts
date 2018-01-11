@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   trigger,
   state,
@@ -6,6 +6,7 @@ import {
   animate,
   transition
 } from '@angular/animations';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -20,8 +21,22 @@ import {
     ])
   ]
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  constructor(private http: HttpClient) {}
+  
+  public results : any = {};
+
+  ngOnInit(): void {
+    // Make the HTTP request:
+    this.http.get('/assets/json/informations.json').subscribe(data => {
+      // Read the result field from the JSON response.
+      this.results = data;
+    });
+  }
+
   public random(){
-    return Math.floor(Math.random() * 100) + 1;
+    let rand = Math.floor(Math.random() * 100) + 1;
+    return rand;
   }
 }
