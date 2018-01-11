@@ -1,0 +1,30 @@
+{
+    "me": {
+        "photoUrl": "",
+        "firstName": "",
+        "lastName": "",
+        "job": ""
+    },
+    "description":{
+        "icon": "",
+        "content": ""
+    },
+    "phones": [{
+        "number": "",
+        "legend": ""
+    }],
+    "emails": [{
+        "email": "",
+        "legend": ""
+    }],
+    "address":{
+        "address": "",
+        "street": "",
+        "town": "",
+        "zipCode": ""
+    },
+    "skills":[{
+        "skillName": "",
+        "progress": 0 
+    }]
+}
