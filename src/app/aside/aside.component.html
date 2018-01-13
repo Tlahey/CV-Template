@@ -1,0 +1,81 @@
+<aside class="sidebar mat-elevation-z4" *ngIf="Results != undefined">
+
+    <!-- HEADER PHOTO -->
+    <div id="photo" [@fadeInOut]>
+      <div id="image">
+        <img [src]="Results?.me.photoUrl" />
+      </div>
+      <div id="identity" fxFlexOffset="25">
+        <h2>{{ Results?.me.firstName }} {{Results?.me.lastName}}</h2>
+        <span>{{ Results?.me.job }}</span>
+      </div>
+    </div>
+
+    <!-- DESCRIPTION -->
+    <div [@fadeInOut] class="item-informations" fxLayout="row" fxLayoutAlign="start start" >
+      <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+          <mat-icon >{{ Results?.description.icon }}</mat-icon>
+      </div>
+      <div fxFlex class="content-text border-bottom">
+        <p>
+            {{ Results?.description.content }}
+        </p>
+      </div>
+    </div>
+
+    <!-- TELEPHONE -->
+    <div [@fadeInOut] class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >{{ Results?.phones.icon }}</mat-icon>
+        </div>
+        <div fxFlex class="content-text border-bottom">
+            <div class="phone-number" *ngFor="let phone of Results?.phones.content">
+                <h4><a [href]="'tel:' + phone.number">{{ phone.number }}</a></h4> <!-- Number -->             
+                <span>{{phone.legend}}</span> 
+            </div>
+        </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div [@fadeInOut] class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >{{ Results?.emails.icon }}</mat-icon>
+        </div>
+        <div fxFlex class="content-text border-bottom">
+            <div class="mail" *ngFor="let email of Results?.emails.content">
+                <h4><a [href]="'mailto:' + email.email">{{ email.email }}</a></h4>
+                <span>{{email.legend}}</span> 
+            </div>
+        </div> 
+    </div>
+
+    <!-- ADRESSE -->
+    <div [@fadeInOut] class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >{{ Results?.address.icon }}</mat-icon>
+        </div>
+        <div fxFlex class="content-text border-bottom">
+          <div class="address" style="margin-bottom:0;"> 
+            <h4>
+                {{ Results?.address.number }} {{ Results?.address.street }} <span>{{ Results?.address.additionalAddress }}</span><br>
+                {{ Results?.address.town }}, {{ Results?.address.country }}.<br>
+                <span>{{ Results?.address.zipCode }}</span>
+              </h4>
+          </div>
+        </div>
+    </div>
+
+    <!-- COMPETENCES -->
+    <div [@fadeInOut] class="item-informations" fxLayout="row" fxLayoutAlign="start start">
+        <div fxFlex="25" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon >equalizer</mat-icon>
+        </div>
+        <div fxFlex class="content-text skill-content">
+          <h3>Professional Skills</h3>
+          <div *ngFor="let skill of Results?.skills" >
+              <span>{{ skill.skillName }}</span>
+              <app-progress [percent]="skill.progress"></app-progress>
+          </div>
+        </div>
+    </div>
+  </aside>

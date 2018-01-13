@@ -6,22 +6,37 @@
         "job": "Ingénieur informatique"
     },
     "description":{
-        "icon": "",
-        "content": ""
+        "icon": "person",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua . Ld do eiusmod tempor incididunt ut labore et dolore magna aliqua"
     },
-    "phones": [{
-        "number": "",
-        "legend": ""
-    }],
-    "emails": [{
-        "email": "",
-        "legend": ""
-    }],
+    "phones": {
+        "icon": "phone",
+        "content": [{
+            "number": "(111)-333-4444",
+            "legend": "mobile"
+        },{
+            "number": "(121)-323-3494",
+            "legend": "work"
+        }]
+    },
+    "emails": {
+        "icon": "email",
+        "content": [{
+            "email": "mail@alrayhan.com",
+            "legend": "personnel"
+        },{
+            "email": "mail@alrayhan.com",
+            "legend": "work"
+        }]   
+    },
     "address":{
-        "address": "",
-        "street": "",
-        "town": "",
-        "zipCode": ""
+        "icon": "home",
+        "number": "6",
+        "street": "Rue des alouettes",
+        "additionalAddress": "(apt 3)",
+        "town": "Lille",
+        "country": "France",
+        "zipCode": "59000"
     },
     "skills":[{
         "skillName": "Angular",
