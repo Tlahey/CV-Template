@@ -1,0 +1,20 @@
+{
+    "icon": "school",
+    "title": "Education",
+    "content": [{
+        "title": "Art & Multimedia",
+        "company": "@Oxford University",
+        "periode": "JAN 2013 - DEC 2013",
+        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }, {
+        "title": "Post Graduation",
+        "company": "@Lorem",
+        "periode": "JAN 2013 - DEC 2013",
+        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }, {
+        "title": "TTMP Degree",
+        "company": "@Creative School",
+        "periode": "JAN 2013 - DEC 2013",
+        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }]    
+}

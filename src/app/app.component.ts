@@ -24,33 +24,20 @@ export const fadeInOutAnimation =
 })
 export class AppComponent implements OnInit {
 
+  public isLoading : boolean = true;
+  public Results : any;
+
   constructor(private informationService : InformationsService) {
-    // this.informationService.UserInformations.subscribe(data => this.results = data);
+    this.informationService.getLoading().subscribe(loading => this.isLoading = loading);
+    this.informationService.getUserInformations().subscribe(x => this.Results = x);
   }
 
   ngOnInit(): void {
-    const subject = new Subject<number>();
 
-      subject.subscribe((number) => {
-        console.log(1, number);
-    });
-    
-    
-    subject.subscribe((number) => {
-        console.log(2, number);
-    });
-
-
-    subject.next(1);  // On envoie une donnée
-    subject.next(2);  // On envoie une autre donnée
-    subject.forEach(x => {
-      console.log("--- " + x);
-    });
-    subject.complete();  // On indique que l'observable n'enverra plus de données
   }
 
-  public random(){
-    let rand = Math.floor(Math.random() * 100) + 1;
-    return rand;
+  ngOnDestroy() : void{
+
   }
+
 }

@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Informations } from './../interfaces/informations';
+import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { InformationsService } from '../informations.service';
 import { fadeInOutAnimation } from '../app.component';
 
@@ -8,14 +9,11 @@ import { fadeInOutAnimation } from '../app.component';
   styleUrls: ['./aside.component.scss'],
   animations: [fadeInOutAnimation]
 })
-export class AsideComponent implements OnInit {
+export class AsideComponent {
 
-  public Results : any = undefined;
-  constructor(public informationService : InformationsService) { 
-    this.informationService.getUserInformations().subscribe(x => this.Results = x);
-  }
+  @Input() Informations : Informations = undefined;
+  constructor() { 
 
-  ngOnInit() {
   }
 
 }

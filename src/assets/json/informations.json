@@ -31,12 +31,12 @@
     },
     "address":{
         "icon": "home",
-        "number": "6",
+        "number": 6,
         "street": "Rue des alouettes",
         "additionalAddress": "(apt 3)",
-        "town": "Lille",
+        "city": "Lille",
         "country": "France",
-        "zipCode": "59000"
+        "zipCode": 59000
     },
     "skills":[{
         "skillName": "Angular",

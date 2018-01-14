@@ -1,87 +1,14 @@
-<div id="content" fxLayout="row" fxLayoutAlign="center start">
+<div id="content" fxLayout="row" fxLayoutAlign="center start" *ngIf="isLoading == false">
 
-  <app-aside fxFlex="33"></app-aside>
+  <app-aside fxFlex="33" [Informations]="Results.Informations"></app-aside>
 
   <div fxFlex fxLayout="column" fxLayoutAlign="start start">
 
-    <section>
-        <div class="section-wrapper mat-elevation-z1" fxLayout="row" fxLayoutAlign="start start">                            
-            <div class="section-icon" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
-                <mat-icon >business center</mat-icon>
-            </div>
-            <div class="custom-content" fxLayout="column" fxLayoutAlign="start start" fxFlex>
-                <h2>Work Experience</h2>
+    <app-section-wrapper-text [Informations]="Results.WorkExperiences"></app-section-wrapper-text>
 
-                <div class="custom-content-wrapper">
-                    <h3>UI/UX Designer <span>@Academy</span></h3>
-                    <span>JAN 2013 - DEC 2013 </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. </p>
-                </div>
-                <div class="custom-content-wrapper">
-                    <h3>Creative Director <span>@DeviserWeb</span></h3>
-                    <span>JAN 2013 - DEC 2013 </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                        dolore magna aliqua. </p>
-                </div>
-                <div class="custom-content-wrapper" >
-                    <h3>Graphics Designer <span>@Creative Wrold</span></h3>
-                    <span>JAN 2013 - DEC 2013 </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. </p>
-                </div>
-            </div>                            
-        </div>
-    </section>
+    <app-section-wrapper-text [Informations]="Results.Education"></app-section-wrapper-text>
 
-    <section>
-        <div class="section-wrapper mat-elevation-z1" fxLayout="row" fxLayoutAlign="start start">                            
-            <div class="section-icon" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
-                <mat-icon >school</mat-icon>
-            </div>
-            <div class="custom-content" fxLayout="column" fxLayoutAlign="start start" fxFlex>
-                <h2>Education</h2>
-
-                <div class="custom-content-wrapper">
-                    <h3>Art & Multimedia <span>@Oxford University</span></h3>
-                    <span>JAN 2013 - DEC 2013 </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. </p>
-                </div>
-                <div class="custom-content-wrapper">
-                    <h3>Post Graduation <span>@Lorem</span></h3>
-                    <span>JAN 2013 - DEC 2013 </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
-                        dolore magna aliqua. </p>
-                </div>
-                <div class="custom-content-wrapper" >
-                    <h3>TTMP Degree <span>@Creative School</span></h3>
-                    <span>JAN 2013 - DEC 2013 </span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
-                        labore et dolore magna aliqua. </p>
-                </div>
-            </div>                            
-        </div>
-    </section>
-
-    <section>
-        <div class="section-wrapper mat-elevation-z1" fxLayout="row" fxLayoutAlign="start start">                            
-            <div class="section-icon" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
-                <mat-icon >flight</mat-icon>
-            </div>
-            <div class="custom-content" fxLayout="column" fxLayoutAlign="start start" fxFlex>
-                <h2>Interestes</h2>
-
-                <div class="custom-content-wrapper" fxLayout="row" fxLayoutAlign="space-evenly center">
-                    <mat-icon matTooltip="Photo">photo_camera</mat-icon>
-                    <mat-icon matTooltip="Photo">photo_camera</mat-icon>
-                    <mat-icon matTooltip="Photo">photo_camera</mat-icon>
-                    <mat-icon matTooltip="Photo">photo_camera</mat-icon>
-                    <mat-icon matTooltip="Photo">photo_camera</mat-icon>
-                </div>
-            </div>                            
-        </div>
-    </section>
+    <app-section-wrapper-text [Informations]="Results.Interestes"></app-section-wrapper-text>
 
   </div>
 </div>

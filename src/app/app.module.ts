@@ -7,13 +7,15 @@ import { MaterialModule } from './material.module';
 import {HttpClientModule} from '@angular/common/http';
 import { AsideComponent } from './aside/aside.component';
 import { InformationsService } from './informations.service';
+import { SectionWrapperTextComponent } from './section-wrapper-text/section-wrapper-text.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProgressComponent,
-    AsideComponent
+    AsideComponent,
+    SectionWrapperTextComponent
   ],
   imports: [
     MaterialModule,

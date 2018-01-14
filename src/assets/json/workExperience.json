@@ -1,0 +1,20 @@
+{
+    "icon": "business_center",
+    "title": "Work Experience",
+    "content": [{
+        "title": "UI/UX Designer",
+        "company": "@Academy",
+        "periode": "JAN 2013 - DEC 2013",
+        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }, {
+        "title": "Creative Director",
+        "company": "@DeviserWeb",
+        "periode": "JAN 2013 - DEC 2013",
+        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }, {
+        "title": "Graphics Director",
+        "company": "@Creative Wrold",
+        "periode": "JAN 2013 - DEC 2013",
+        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    }]    
+}
