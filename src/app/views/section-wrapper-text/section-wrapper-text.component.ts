@@ -1,7 +1,7 @@
-import { Interestes } from './../interfaces/interestes';
-import { WorkExperiences } from './../interfaces/work-experiences';
+import { Interestes } from './../../interfaces/interestes';
+import { WorkExperiences } from './../../interfaces/work-experiences';
 import { Component, OnInit, Input } from '@angular/core';
-import { Education } from '../interfaces/education';
+import { Education } from '../../interfaces/education';
 
 @Component({
   selector: 'app-section-wrapper-text',

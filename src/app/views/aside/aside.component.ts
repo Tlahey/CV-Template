@@ -1,7 +1,7 @@
-import { Informations } from './../interfaces/informations';
+import { Informations } from './../../interfaces/informations';
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { InformationsService } from '../informations.service';
-import { fadeInOutAnimation } from '../app.component';
+import { InformationsService } from '../../informations.service';
+import { fadeInOutAnimation } from '../../app.component';
 
 @Component({
   selector: 'app-aside',

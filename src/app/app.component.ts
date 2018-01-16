@@ -8,6 +8,8 @@ import {
 } from '@angular/animations';
 import { InformationsService } from './informations.service';
 import { Subject } from 'rxjs/Subject';
+import {DomSanitizer} from '@angular/platform-browser';
+import {MatIconRegistry} from '@angular/material';
 
 export const fadeInOutAnimation =
   trigger('fadeInOut', [
@@ -24,10 +26,12 @@ export const fadeInOutAnimation =
 })
 export class AppComponent implements OnInit {
 
-  public isLoading : boolean = true;
+  public isLoading : boolean;
   public Results : any;
 
-  constructor(private informationService : InformationsService) {
+  constructor(private informationService : InformationsService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
+    iconRegistry.addSvgIconSetInNamespace('mdi', sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/mdi.svg'))
+    this.isLoading = true;
     this.informationService.getLoading().subscribe(loading => this.isLoading = loading);
     this.informationService.getUserInformations().subscribe(x => this.Results = x);
   }

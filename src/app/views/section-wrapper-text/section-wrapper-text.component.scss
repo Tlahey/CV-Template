@@ -1,15 +1,6 @@
 section{
 
-    padding: 0 0.75rem 0 32px;
-    text-align: left;
-    height: 100%;
-    width: 100%;
-
     .section-wrapper {
-      background-color: #ffffff;
-      overflow: hidden;
-      margin-bottom: 24px;
-      padding-bottom: 24px !important;
 
       .section-icon{
         margin-top: 40px;
@@ -18,11 +9,6 @@ section{
           height:30pt;
           width: 30pt;
         }
-      }
-
-      h2{
-        margin-top: 30px;
-        margin-bottom: 25px;
       }
 
       .custom-content-wrapper{

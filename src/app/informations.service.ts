@@ -74,6 +74,7 @@ export class InformationsService {
       this._userInformations = datas;
       this.userInformations$.next(datas);
       this.userInformations$.complete();
+      
       this.loading$.next(false);
     });
   }
