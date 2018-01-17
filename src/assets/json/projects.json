@@ -1,0 +1,19 @@
+{
+    "title": "Mes projets",
+    "projects": [{
+        "title": "CV",
+        "htmlDescription": "Code source de l'application Web développée en Angular 2+. Ce projet permet de créer son CV à partir d'une template et de modifier les informations à afficher avec des fichiers de configuration.",
+        "href": "https://bitbucket.org/Tlahey/cv",
+        "usedApplications": ["angular 5", "typeScript", "scss"]
+    },{
+        "title": "LimitLimit",
+        "htmlDescription": "Application tiré du jeu. Utilise un serveur nodeJs et des sessions pour que les utilisateurs puissent jouer sur un même réseau.",
+        "href": "https://bitbucket.org/Tlahey/limitlimit",
+        "usedApplications": ["NodeJs", "typeScript"]
+    },{
+        "title": "Phazer",
+        "htmlDescription": "Test web pour une animation de jeu.",
+        "href": "https://bitbucket.org/Tlahey/Phazer",
+        "usedApplications": ["Phazer", "typeScript", "NodeJs"]
+    }]    
+}

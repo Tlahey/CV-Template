@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { InformationsService } from '../../informations.service';
+import { Projects } from '../../interfaces/projects';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProjectsComponent implements OnInit {
 
-  constructor() { }
+  public Projects : Projects;
 
+  constructor(private informationService : InformationsService) { 
+    this.informationService.getUserInformations().subscribe(x => this.Projects = x.Projects);
+  }
+  
   ngOnInit() {
   }
 
+  public navigateNewTab(url){
+    window.open(url, "_blank");
+  }
 }

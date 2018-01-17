@@ -1,11 +1,25 @@
 <section >
   <div class="section-wrapper mat-elevation-z1" fxLayout="row" fxLayoutAlign="start start">
       <div class="custom-content" fxLayout="column" fxLayoutAlign="start start" fxFlex>
-          <h2>BANNIER</h2>
-        <div fxLayout="row" fxLayoutAlign="start start">
-          <div>IMAGE</div>
-          <div>DESCRIPTION</div>
+        <h2>{{ Projects.title }}</h2>
+
+        <div *ngFor="let projet of Projects.projects" class="project" fxLayout="row" fxLayoutAlign="center center">
+          <div class="title" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
+            <div>{{ projet.title }}</div>
+          </div>
+          <div class="description" fxFlex="60" fxLayout="column" fxLayoutAlign="center center">
+            <p>
+              {{ projet.htmlDescription }}
+            </p>
+            <mat-chip-list>
+              <mat-chip *ngFor="let application of projet.usedApplications">{{ application }}</mat-chip>
+            </mat-chip-list>
+          </div>
+          <div class="link" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon svgIcon="mdi:bitbucket" matTooltip="Code bitbucket" (click)="navigateNewTab(projet.htmlDescription)"></mat-icon>
+          </div>
         </div>
+
       </div>
   </div>
 </section>

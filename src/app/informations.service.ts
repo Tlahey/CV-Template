@@ -11,6 +11,7 @@ import { forkJoin } from "rxjs/observable/forkJoin";
 import { Education } from './interfaces/education';
 import { WorkExperiences } from './interfaces/work-experiences';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
+import { Projects } from './interfaces/projects';
 
 // https://hackernoon.com/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3 
 
@@ -18,7 +19,8 @@ export interface IResults{
   'Informations': Informations,
   'WorkExperiences': WorkExperiences,
   'Education': Education, 
-  'Interestes': Interestes
+  'Interestes': Interestes,
+  'Projects': Projects
 }
 
 @Injectable()
@@ -56,17 +58,19 @@ export class InformationsService {
       this.http.get<Informations>('./assets/json/informations.json'),
       this.http.get<WorkExperiences>('./assets/json/workExperience.json'),
       this.http.get<Education>('./assets/json/education.json'),
-      this.http.get<Interestes>('./assets/json/interestes.json')
+      this.http.get<Interestes>('./assets/json/interestes.json'),
+      this.http.get<Projects>('./assets/json/projects.json')
     ])
     .pipe(map(
       // On format les données pour avoir 1 seul JSON
       (datas : Array<any>) => {
-        const [ uInformations, uWorkExperiences, uEducation, uInterestes ] = datas;
+        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs ] = datas;
         return {
           'Informations': uInformations,
           'WorkExperiences': uWorkExperiences,
           'Education': uEducation,
-          'Interestes': uInterestes
+          'Interestes': uInterestes,
+          'Projects': uProjetcs
         } as IResults;
       }
     ))
@@ -74,7 +78,7 @@ export class InformationsService {
       this._userInformations = datas;
       this.userInformations$.next(datas);
       this.userInformations$.complete();
-      
+
       this.loading$.next(false);
     });
   }
