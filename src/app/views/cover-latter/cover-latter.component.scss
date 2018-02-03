@@ -1,0 +1,42 @@
+mat-card{
+    padding: 30px !important;
+    .custom-content{
+
+        .cover-title{
+            span{
+                font-size: 12pt;
+                line-height: 20pt;
+                font-weight: 500;
+            }
+            h2{
+                font-size: 12pt;
+                line-height: 20pt;
+                margin-top: 20px;
+                margin-bottom: 0;
+            }
+            p{
+                margin-top: 0px;
+            }
+        }
+        h4.cover-title{
+            font-size: 12pt;
+            line-height: 20pt;
+            opacity: 1;
+            margin: 1.14rem 0 0.912rem 0;
+        }
+        .signature{
+            img{
+                border: 0;
+            }
+            h4{
+                margin:0;
+            }
+            h5{
+                font-size: 10pt;
+                margin: 0px;
+                padding: 0px;
+                line-height: 15pt;
+            }
+        }
+    }
+}

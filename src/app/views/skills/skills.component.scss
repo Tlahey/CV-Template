@@ -1,0 +1,24 @@
+:host {
+    width: 100%;
+
+    mat-card{
+        padding: 30px !important;
+
+        .skills-bloc{
+            padding-bottom: 26px;
+        }
+        .rate-bar{
+            margin: 0 auto;
+            width:75%;
+        }
+
+        mat-expansion-panel{
+            &.mat-expanded{
+                mat-expansion-panel-header{
+                    background: rgba(0,0,0,.04);
+                }
+            }
+        }
+    }
+
+}

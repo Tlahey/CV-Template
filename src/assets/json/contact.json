@@ -1,0 +1,17 @@
+{
+    "icon": "contact",
+    "title": "Contact",
+    "content": [{
+        "icon": "mdi:facebook",
+        "tooltip": "Facebook",
+        "url": ""
+    }, {
+        "icon": "mdi:facebook",
+        "tooltip": "Facebook",
+        "url": ""
+    }, {
+        "icon": "mdi:facebook",
+        "tooltip": "Facebook",
+        "url": ""
+    }]    
+}

@@ -1,4 +1,6 @@
+import { Skills } from './../../interfaces/skills';
 import { Component, OnInit } from '@angular/core';
+import { InformationsService } from '../../informations.service';
 
 @Component({
   selector: 'app-skills',
@@ -7,9 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
 
-  constructor() { }
+  public skill : Skills;
+
+  constructor(private informationService : InformationsService) { 
+    this.informationService.getUserInformations().subscribe(x => this.skill = x.Skills);
+  }
 
   ngOnInit() {
   }
+ 
+  step : number = -1;
+  setStep(index: number) {
+    if(this. step == index)
+      this.step = -1;
+    else
+      this.step = index;
+  }
 
+  setIcon(index){
+    if(index == this.step)
+      return true;
+    return false;
+  }
 }

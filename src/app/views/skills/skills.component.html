@@ -1,3 +1,63 @@
-<p>
-  skills works!
-</p>
+<mat-card >
+    <!-- http://ljouanneau.com/cv -->
+    <mat-card-header>
+      <mat-card-title>
+          <h2>{{ skill.title }}</h2>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="custom-content" >
+  
+    <mat-accordion class="example-headers-align">
+      <mat-expansion-panel *ngFor="let content of skill.content; let i = index" hideToggle="true">
+        
+        <!-- HEADER -->
+        <mat-expansion-panel-header fxLayout="row" fxLayoutAlign="space-between center" (click)="setStep(i)">
+          <mat-panel-title>
+            {{ content.pannelTitle }}
+          </mat-panel-title>
+          <mat-icon *ngIf="setIcon(i); else other_content" >keyboard_arrow_up</mat-icon>
+          <ng-template #other_content>
+                <mat-icon >keyboard_arrow_down</mat-icon>
+            </ng-template>
+        </mat-expansion-panel-header>
+
+        <!-- CONTENT -->
+        <div fxLayout="row wrap" class="skills-bloc">
+            <!-- ELEMENT -->
+            <div fxFlex="100" fxLayout="column" *ngFor="let skillElement of content.pannelContent">
+              <h4>{{ skillElement.skillName }}</h4> 
+              <div class="rate-bar">
+                  <app-rate [note]="skillElement.rate"></app-rate>
+              </div>
+            </div>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+
+
+    </mat-card-content>
+  </mat-card>
+
+<!-- 
+Technologies
+    Technologies Mozilla: XUL, XBL, Javascript ES6/ES7, XPCOM C++.
+    Normes web W3C : HTML 5, CSS 3, XML, DOM, Web components, Web API, SVG...
+    Developpement frontend avec jQuery, Backbone, Grunt, Node.js...
+Langages
+    C/C++, PHP 5 & PHP 7, Javascript / ES2016+, Python, Bash
+Environnements
+    Je travaille sur divers systèmes d'exploitations : Windows, MacOS et GNU/Linux. Ce dernier est cependant mon système favori depuis plusieurs années : installation, configuration, administration, sous Debian, Ubuntu, Proxmox...
+    Virtualisation avec LXC, Vagrant, Docker, OpenVZ...
+Bases de données
+    PostGreSql, MySQL, Redis, CouchDb, Sqlite
+Outils
+    Git, Mercurial, Subversion
+Administration système
+    Développement d'infrastructures web, avec Apache, Nginx, PHP-fpm, RabbitMQ, Resque, Puppet, Ansible..
+    Mise en place d'infrastructure d'intégration continue avec Gitlab, StriderCD, Jenkins...
+Gestion de projet
+    Méthodes agiles : SCRUM et un peu d'XP
+Par le passé...
+    J'ai utilisé de nombreux langages et technologies, à divers degrés, et pour certaines avec une forte expertise. Mais ne pratiquant plus, ces compétences ce sont évidement étiolées. Quelques exemples : MongoDb, RelaxNG, JAVA/JSP, Programmation Win32, programmation XWindows, Assembleur Saturn, MS SQL Server, Oracle, CVS, ASP VBscript...
+-->

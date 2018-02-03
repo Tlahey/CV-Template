@@ -1,0 +1,21 @@
+.skill-bar {
+    height: 6px;
+    width: 100%;
+    display: table;
+
+    .skill-rate-on {
+        background-color: #5da4d9;
+    }
+
+    .skill-rate-on, 
+    .skill-rate-off {
+        display: table-cell;
+        border-left: 2px solid #fff;
+        border-right: 2px solid #fff;
+        transform: skewX(-54deg);
+    }
+
+    .skill-rate-off{
+        background-color: rgba(118, 114, 112, 0.3);
+    }
+}

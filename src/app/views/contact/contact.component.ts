@@ -1,4 +1,6 @@
+import { InformationsService } from './../../informations.service';
 import { Component, OnInit } from '@angular/core';
+import { Contact } from '../../interfaces/contact';
 
 @Component({
   selector: 'app-contact',
@@ -7,7 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  public Contact : Contact;
+  constructor(private informationService : InformationsService) { 
+    this.informationService.getUserInformations().subscribe(x => this.Contact = x.Contact);
+  }
 
   ngOnInit() {
   }

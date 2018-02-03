@@ -12,6 +12,8 @@ import { Education } from './interfaces/education';
 import { WorkExperiences } from './interfaces/work-experiences';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 import { Projects } from './interfaces/projects';
+import { Skills } from './interfaces/skills';
+import { Contact } from './interfaces/contact';
 
 // https://hackernoon.com/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3 
 
@@ -20,7 +22,9 @@ export interface IResults{
   'WorkExperiences': WorkExperiences,
   'Education': Education, 
   'Interestes': Interestes,
-  'Projects': Projects
+  'Projects': Projects,
+  'Skills': Skills,
+  'Contact': Contact
 }
 
 @Injectable()
@@ -59,18 +63,22 @@ export class InformationsService {
       this.http.get<WorkExperiences>('./assets/json/workExperience.json'),
       this.http.get<Education>('./assets/json/education.json'),
       this.http.get<Interestes>('./assets/json/interestes.json'),
-      this.http.get<Projects>('./assets/json/projects.json')
+      this.http.get<Projects>('./assets/json/projects.json'),
+      this.http.get<Skills>('./assets/json/skills.json'),
+      this.http.get<Contact>('./assets/json/contact.json')
     ])
     .pipe(map(
       // On format les données pour avoir 1 seul JSON
       (datas : Array<any>) => {
-        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs ] = datas;
+        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs, uSkills, uContact ] = datas;
         return {
           'Informations': uInformations,
           'WorkExperiences': uWorkExperiences,
           'Education': uEducation,
           'Interestes': uInterestes,
-          'Projects': uProjetcs
+          'Projects': uProjetcs,
+          'Skills': uSkills,
+          'Contact': uContact
         } as IResults;
       }
     ))

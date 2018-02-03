@@ -37,61 +37,68 @@ aside{
       }
     }
 
+    #content{
+      .item-informations{
 
-    .item-informations{
-      
-      overflow: hidden;
-      margin-top: 10px;
-      padding-left: -0.75rem;
-      padding-right: -0.75rem;
-      margin-bottom: 20px;
-      mat-icon{
-        font-size: 28px;
-      }
+        margin-top: 25px; 
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding-left: -0.75rem;
+        padding-right: -0.75rem;
 
-      .content-text{
-        padding-right: 26px;
-        padding-bottom: 30px;
-        
-        p{
-          margin: 0px;
-          font-weight: 300;
-          font-size: 10pt;
-          line-height: 17pt;
-          opacity: 0.9;
-        }
-        h3{
-          margin-top: 0px;
-          margin-bottom: 20px;
-        }
-        .skill-content{
-          padding-right: 30px;
+        mat-icon{
+          font-size: 28px;
         }
 
-        .address,
-        .mail,
-        .phone-number{
-        
-          &:first-child{
+        &:first-child{
+          margin-top: 10px; 
+        }
+
+        .content-text{
+          padding-right: 26px;
+          padding-bottom: 30px;
+          
+          p{
+            margin: 0px;
+            font-weight: 300;
+            font-size: 10pt;
+            line-height: 17pt;
+            opacity: 0.9;
+          }
+          h3{
+            margin-top: 0px;
             margin-bottom: 20px;
           }
-          span{
-            opacity: 0.7;
-            font-weight: 300;
+          .skill-content{
+            padding-right: 30px;
           }
-          h4{
-            margin: 0px;
-            a{
-              font-weight: inherit;
-              color: #ffffff;
-              text-decoration: none;
-            }
-          }
+
+          .address,
+          .mail,
+          .phone-number{
           
+            &:first-child{
+              margin-bottom: 20px;
+            }
+            span{
+              opacity: 0.7;
+              font-weight: 300;
+            }
+            h4{
+              margin: 0px;
+              a{
+                font-weight: inherit;
+                color: #ffffff;
+                text-decoration: none;
+              }
+            }
+            
+          }
         }
-      }
-      .border-bottom{
-        border-bottom: 1px solid #4783c2;
-      }
+        .border-bottom{
+          border-bottom: 1px solid #4783c2;
+        }
+      }      
     }
+
   }

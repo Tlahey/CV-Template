@@ -14,6 +14,7 @@ import { ActivatedRoute, Routes, RouterModule } from '@angular/router';
 import { UserInformationsComponent } from './views/user-informations/user-informations.component';
 import { ProjectsComponent } from './views/projects/projects.component';
 import { CoverLatterComponent } from './views/cover-latter/cover-latter.component';
+import { RateComponent } from './components/rate/rate.component';
 
 export const routes: Routes = [
   { path: '',   redirectTo: '/information', pathMatch: 'full' },
@@ -34,7 +35,8 @@ export const routes: Routes = [
     ProjectsComponent,
     CoverLatterComponent,
     SkillsComponent,
-    ContactComponent
+    ContactComponent,
+    RateComponent
   ],
   imports: [
     MaterialModule,

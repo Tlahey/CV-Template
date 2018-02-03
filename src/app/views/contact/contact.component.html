@@ -1,3 +1,19 @@
-<p>
-  contact works!
-</p>
+<mat-card >
+    <mat-card-header>
+      <mat-card-title>
+          <h2>{{ Contact.title }}</h2>
+      </mat-card-title>
+    </mat-card-header>
+    <mat-card-content class="custom-content">
+  
+        <ul class='circle-container'>
+          <li fxLayout="row" 
+              fxLayoutAlign="center center" 
+              [matTooltip]="item.tooltip"
+              *ngFor="let item of Contact.content">
+            <mat-icon [svgIcon]="item.icon"></mat-icon>
+          </li>
+        </ul>
+  
+    </mat-card-content>
+  </mat-card>
