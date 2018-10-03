@@ -15,14 +15,16 @@ import { UserInformationsComponent } from './views/user-informations/user-inform
 import { ProjectsComponent } from './views/projects/projects.component';
 import { CoverLatterComponent } from './views/cover-latter/cover-latter.component';
 import { RateComponent } from './components/rate/rate.component';
+import { TrainingsAndCertificationsComponent } from './views/trainings-and-certifications/trainings-and-certifications.component';
 
 export const routes: Routes = [
   { path: '',   redirectTo: '/information', pathMatch: 'full' },
-  { path: 'information', component: UserInformationsComponent },
+  { path: 'informations', component: UserInformationsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'coverLatter', component: CoverLatterComponent },
   { path: 'skills', component: SkillsComponent },
-  { path: 'contact', component: ContactComponent }
+  { path: 'contacts', component: ContactComponent },
+  { path: 'tainings-and-certifications', component: TrainingsAndCertificationsComponent }
 ];
 
 @NgModule({
@@ -36,7 +38,8 @@ export const routes: Routes = [
     CoverLatterComponent,
     SkillsComponent,
     ContactComponent,
-    RateComponent
+    RateComponent,
+    TrainingsAndCertificationsComponent
   ],
   imports: [
     MaterialModule,

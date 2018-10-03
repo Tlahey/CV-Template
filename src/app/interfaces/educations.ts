@@ -1,4 +1,4 @@
-export interface Education {
+export interface IEducations {
     icon: string;
     title: string;
     content: Array<{

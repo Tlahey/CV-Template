@@ -1,4 +1,4 @@
-export interface Informations {
+export interface IInformations {
 
     me: {
         photoUrl: string,

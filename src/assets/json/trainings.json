@@ -1,0 +1,15 @@
+{
+    "icon": null,
+    "title": "Formations",
+    "content": [{
+        "title": "Sécurité OWASP",
+        "company": "@Academy",
+        "periode": "OCT 2018",
+        "htmlDescription": "."
+    }, {
+        "title": "AngularJS",
+        "company": "",
+        "periode": "AVR 2016",
+        "htmlDescription": "."
+    }]    
+}

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { InformationsService } from '../../informations.service';
-import { Projects } from '../../interfaces/projects';
+import { IProjects } from '../../interfaces/projects';
 
 @Component({
   selector: 'app-projects',
@@ -9,7 +9,7 @@ import { Projects } from '../../interfaces/projects';
 })
 export class ProjectsComponent implements OnInit {
 
-  public Projects : Projects;
+  public Projects : IProjects;
 
   constructor(private informationService : InformationsService) { 
     this.informationService.getUserInformations().subscribe(x => this.Projects = x.Projects);

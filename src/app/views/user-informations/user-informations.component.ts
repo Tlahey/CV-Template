@@ -6,7 +6,7 @@ import { fadeInOutAnimation } from '../../app.component';
 @Component({
   selector: 'app-user-informations',
   templateUrl: './user-informations.component.html',
-  styleUrls: ['./user-informations.component.scss'],
+  styleUrls: [],
   animations: [fadeInOutAnimation]
 })
 export class UserInformationsComponent implements OnInit {
@@ -14,10 +14,10 @@ export class UserInformationsComponent implements OnInit {
   public Results : IResults;
 
   constructor(private informationService : InformationsService) { 
-    this.informationService.getUserInformations().subscribe(x => this.Results = x);
   }
 
   ngOnInit() {
+    this.informationService.getUserInformations().subscribe(x => this.Results = x);
   }
 
 }

@@ -2,7 +2,7 @@
     <mat-card-header>
       <mat-card-title>
           <div class="section-icon" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
-              <mat-icon >{{ Informations.icon }}</mat-icon>
+              <mat-icon *ngIf="Informations.icon != null" >{{ Informations.icon }}</mat-icon>
           </div>
           <h2>{{Informations.title}}</h2>
       </mat-card-title>

@@ -1,4 +1,4 @@
-export interface WorkExperiences {
+export interface IWorkExperiences {
     icon: string;
     title: string;
     content : Array<{

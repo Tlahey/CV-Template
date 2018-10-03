@@ -1,4 +1,4 @@
-import { Skills } from './../../interfaces/skills';
+import { ISkills } from './../../interfaces/skills';
 import { Component, OnInit } from '@angular/core';
 import { InformationsService } from '../../informations.service';
 
@@ -9,7 +9,7 @@ import { InformationsService } from '../../informations.service';
 })
 export class SkillsComponent implements OnInit {
 
-  public skill : Skills;
+  public skill : ISkills;
 
   constructor(private informationService : InformationsService) { 
     this.informationService.getUserInformations().subscribe(x => this.skill = x.Skills);

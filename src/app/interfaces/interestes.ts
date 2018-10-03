@@ -1,4 +1,4 @@
-export interface Interestes {
+export interface IInterestes {
     icon: string;
     title: string;
     hobbies : Array<{

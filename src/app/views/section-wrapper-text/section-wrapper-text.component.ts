@@ -1,7 +1,9 @@
-import { Interestes } from './../../interfaces/interestes';
-import { WorkExperiences } from './../../interfaces/work-experiences';
 import { Component, OnInit, Input } from '@angular/core';
-import { Education } from '../../interfaces/education';
+import { IWorkExperiences } from '../../interfaces/work-experiences';
+import { IEducations } from '../../interfaces/educations';
+import { IInterestes } from '../../interfaces/interestes';
+import { ICertifications } from '../../interfaces/certifications';
+import { ITrainings } from '../../interfaces/trainings';
 
 @Component({
   selector: 'app-section-wrapper-text',
@@ -10,7 +12,7 @@ import { Education } from '../../interfaces/education';
 })
 export class SectionWrapperTextComponent implements OnInit {
 
-  @Input('Informations') Informations : (WorkExperiences | Education | Interestes) = undefined;
+  @Input('Informations') Informations : (IWorkExperiences | IEducations | IInterestes | ICertifications | ITrainings) = undefined;
   constructor() { }
 
   ngOnInit() {

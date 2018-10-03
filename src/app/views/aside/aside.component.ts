@@ -1,4 +1,4 @@
-import { Informations } from './../../interfaces/informations';
+import { IInformations } from './../../interfaces/informations';
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 import { InformationsService } from '../../informations.service';
 import { fadeInOutAnimation } from '../../app.component';
@@ -11,7 +11,7 @@ import { fadeInOutAnimation } from '../../app.component';
 })
 export class AsideComponent {
 
-  @Input() Informations : Informations = undefined;
+  @Input() Informations : IInformations = undefined;
   constructor() { 
 
   }

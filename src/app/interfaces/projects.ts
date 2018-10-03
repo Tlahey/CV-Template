@@ -1,4 +1,4 @@
-export interface Projects {
+export interface IProjects {
     title: string;
     projects: Array<{
         title: string,

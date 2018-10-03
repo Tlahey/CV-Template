@@ -1,4 +1,4 @@
-export interface Contact {
+export interface IContacts {
     icon: string;
     title: string;
     content: Array<{

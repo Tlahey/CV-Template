@@ -1,25 +1,29 @@
-import { Interestes } from './interfaces/interestes';
-import { Informations } from './interfaces/informations';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable ,  Subject ,  AsyncSubject ,  forkJoin ,  BehaviorSubject } from 'rxjs';
 import  { map ,  timeout } from 'rxjs/operators';
-import { Education } from './interfaces/education';
-import { WorkExperiences } from './interfaces/work-experiences';
-import { Projects } from './interfaces/projects';
-import { Skills } from './interfaces/skills';
-import { Contact } from './interfaces/contact';
+import { IEducations } from './interfaces/educations';
+import { IWorkExperiences } from './interfaces/work-experiences';
+import { IProjects } from './interfaces/projects';
+import { ISkills } from './interfaces/skills';
+import { IContacts } from './interfaces/contacts';
+import { IInterestes } from './interfaces/interestes';
+import { IInformations } from './interfaces/informations';
+import { ITrainings } from './interfaces/trainings';
+import { ICertifications } from './interfaces/certifications';
 
 // https://hackernoon.com/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3 
 
 export interface IResults{
-  'Informations': Informations,
-  'WorkExperiences': WorkExperiences,
-  'Education': Education, 
-  'Interestes': Interestes,
-  'Projects': Projects,
-  'Skills': Skills,
-  'Contact': Contact
+  'Informations': IInformations,
+  'WorkExperiences': IWorkExperiences,
+  'Educations': IEducations, 
+  'Interestes': IInterestes,
+  'Projects': IProjects,
+  'Skills': ISkills,
+  'Contacts': IContacts,
+  'Trainings': ITrainings,
+  'Certifications': ICertifications
 }
 
 @Injectable()
@@ -54,26 +58,30 @@ export class InformationsService {
     this.loading$.next(true);
     console.log("setUserInformations launched");
     forkJoin([
-      this.http.get<Informations>('./assets/json/informations.json'),
-      this.http.get<WorkExperiences>('./assets/json/workExperience.json'),
-      this.http.get<Education>('./assets/json/education.json'),
-      this.http.get<Interestes>('./assets/json/interestes.json'),
-      this.http.get<Projects>('./assets/json/projects.json'),
-      this.http.get<Skills>('./assets/json/skills.json'),
-      this.http.get<Contact>('./assets/json/contact.json')
+      this.http.get<IInformations>('./assets/json/informations.json'),
+      this.http.get<IWorkExperiences>('./assets/json/workExperiences.json'),
+      this.http.get<IEducations>('./assets/json/educations.json'),
+      this.http.get<IInterestes>('./assets/json/interestes.json'),
+      this.http.get<IProjects>('./assets/json/projects.json'),
+      this.http.get<ISkills>('./assets/json/skills.json'),
+      this.http.get<IContacts>('./assets/json/contacts.json'),
+      this.http.get<ITrainings>('./assets/json/trainings.json'),
+      this.http.get<ICertifications>('./assets/json/certifications.json'),
     ])
     .pipe(map(
       // On format les données pour avoir 1 seul JSON
       (datas : Array<any>) => {
-        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs, uSkills, uContact ] = datas;
+        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs, uSkills, uContact, uTrain, uCertif ] = datas;
         return {
           'Informations': uInformations,
           'WorkExperiences': uWorkExperiences,
-          'Education': uEducation,
+          'Educations': uEducation,
           'Interestes': uInterestes,
           'Projects': uProjetcs,
           'Skills': uSkills,
-          'Contact': uContact
+          'Contacts': uContact,
+          'Trainings': uTrain,
+          'Certifications': uCertif
         } as IResults;
       }
     ))
