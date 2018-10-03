@@ -9,6 +9,10 @@
         "icon": "person",
         "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua . Ld do eiusmod tempor incididunt ut labore et dolore magna aliqua"
     },
+    "permis": {
+        "icon": "directions_car",
+        "content": "Titulaire du permis B en 2015"
+    },
     "phones": {
         "icon": "phone",
         "content": [{

@@ -2,14 +2,14 @@
     "icon": null,
     "title": "Certifications",
     "content": [{
-        "title": "Microsoft",
+        "title": "Competency Advanced Analytics for Data Analytics",
         "company": "@microsoft",
-        "periode": "Aout 2018",
+        "periode": "AOU 2018",
         "htmlDescription": "."
     }, {
-        "title": "Microsoft",
+        "title": "Competency Data Platform & Analytics Foundational for Data Analytics Competency",
         "company": "@microsoft",
-        "periode": "Aout 2018",
+        "periode": "AOU 2018",
         "htmlDescription": "."
     }]    
 }
