@@ -7,7 +7,7 @@ import {
   transition
 } from '@angular/animations';
 import { InformationsService } from './informations.service';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import {DomSanitizer} from '@angular/platform-browser';
 import {MatIconRegistry} from '@angular/material';
 
