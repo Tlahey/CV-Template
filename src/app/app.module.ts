@@ -18,7 +18,7 @@ import { RateComponent } from './components/rate/rate.component';
 import { TrainingsAndCertificationsComponent } from './views/trainings-and-certifications/trainings-and-certifications.component';
 
 export const routes: Routes = [
-  { path: '',   redirectTo: '/information', pathMatch: 'full' },
+  { path: '',   redirectTo: '/informations', pathMatch: 'full' },
   { path: 'informations', component: UserInformationsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'coverLatter', component: CoverLatterComponent },
