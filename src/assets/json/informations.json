@@ -7,7 +7,7 @@
     },
     "description":{
         "icon": "person",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua . Ld do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+        "content": "Né à Douai le 02/07/1991, je suis un passionné d'informatique et cela depuis mon plus jeune âge. C'est bien plus qu'un métier pour moi, j'aime créer et d'aider les gens grâce à mes créations."
     },
     "permis": {
         "icon": "directions_car",
@@ -16,37 +16,66 @@
     "phones": {
         "icon": "phone",
         "content": [{
-            "number": "(111)-333-4444",
+            "number": "06 07 00 51 68",
             "legend": "mobile"
-        },{
-            "number": "(121)-323-3494",
-            "legend": "work"
         }]
     },
     "emails": {
         "icon": "email",
         "content": [{
-            "email": "mail@alrayhan.com",
-            "legend": "personnel"
-        },{
-            "email": "mail@alrayhan.com",
-            "legend": "work"
+            "email": "a.vendeville@orange.fr",
+            "legend": "personnelle"
         }]   
     },
     "address":{
         "icon": "home",
         "number": 6,
-        "street": "Rue des alouettes",
-        "additionalAddress": "(apt 3)",
-        "city": "Lille",
+        "street": "Rue Rose Valland",
+        "additionalAddress": "(apt B23)",
+        "city": "Marcq-en-Baroeul",
         "country": "France",
-        "zipCode": 59000
+        "zipCode": 59700
     },
-    "skills":[{
-        "skillName": "Angular",
-        "progress": 80
-    },{
-        "skillName": "Angular 2+",
-        "progress": 15
-    }]
+    "skills": {
+        "title": "Compétances majeure",
+        "content": [{
+            "skillName": "Scrum / Agile",
+            "progress": 80,
+            "icon": "custom:scrum"
+        }, {
+            "skillName": "AngularJS",
+            "progress": 80,
+            "icon": "mdi:angularjs"
+        }, {
+            "skillName": "HTML",
+            "progress": 85,
+            "icon": "mdi:language-html5"
+        }, {
+            "skillName": "CSS 3 / SAAS / LESS",
+            "progress": 85,
+            "icon": "mdi:language-css3"
+        }, {
+            "skillName": "Javascript",
+            "progress": 85,
+            "icon": "mdi:language-javascript"
+        }, {
+            "skillName": "Material",
+            "progress": 85,
+            "icon": "mdi:material-design"
+        }, {
+            "skillName": "NodeJs",
+            "progress": 80,
+            "icon": "mdi:nodejs"
+        }, {
+            "skillName": "Typescript",
+            "progress": 85,
+            "icon": "mdi:language-typescript"
+        }, {
+            "skillName": "Docker",
+            "progress": 60,
+            "icon": "mdi:docker"
+        }]
+    }
+
+    
 }

@@ -2,14 +2,14 @@
     "icon": null,
     "title": "Formations",
     "content": [{
-        "title": "Sécurité OWASP",
+        "title": "Sécurité OWASP (3 jours)",
         "company": "@Academy",
         "periode": "OCT 2018",
-        "htmlDescription": "."
+        "htmlDescription": "Sensibilisation et explication des différentes failles pouvant être exploité sur les sites internet. TP permettant de mettre en place des solutions pour sécuriser les accès, et bonnes pratiques de log."
     }, {
-        "title": "AngularJS",
-        "company": "",
+        "title": "AngularJS (5 jours)",
+        "company": "@ThierryChatel",
         "periode": "AVR 2016",
-        "htmlDescription": "."
+        "htmlDescription": "Formation AngularJS / Javascript. Apprentissage des bases d'AngularJs et utilisation des différents composants."
     }]    
 }

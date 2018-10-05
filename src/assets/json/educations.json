@@ -2,19 +2,34 @@
     "icon": "school",
     "title": "Education",
     "content": [{
-        "title": "Art & Multimedia",
-        "company": "@Oxford University",
-        "periode": "JAN 2013 - DEC 2013",
-        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Manager du système d'information",
+        "company": "@exiacesi",
+        "periode": "2012 - 2014",
+        "htmlDescription": [
+            "Obtention du diplôme, gestion de projet et des risques, étude du PMBOK.",
+            "Spécification logiciel, développement C# / Web / Java.<br/>",
+            "<br/>", 
+            "Projets importants réalisés en 5ème année : ",
+            "<ul>",
+                "<li>Présentation d'une idée chez <strong>LeGrand</strong> «Comment utiliser et exporté les données des prises connectées»</li>",
+                "<li>Approfondissement technique sur l'algorithmique et le problème de satisfaction de contraintes</li>",
+                "<li>Projet Recherche Innovation sur les avantages du travail collaboratif en environnement professionnel</li>",
+                "<li>Projet en fil rouge : Développement d'une application pour Nokia et gestion du projet en utilisant le <strong>PMBOK</strong></li>",
+            "</ul>",
+            "Projets importants réalisés en 4ème année : ",
+            "<ul>",
+                "<li>Projet en fil rouge : Développement d'un application mobile pour <strong>Nokia</strong> en utilisant le SDK Imaging</li>",
+            "</ul>"
+        ]
     }, {
-        "title": "Post Graduation",
-        "company": "@Lorem",
-        "periode": "JAN 2013 - DEC 2013",
-        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Diplôme d'analyste programmeur",
+        "company": "@exiacesi",
+        "periode": "2010 - 2012",
+        "htmlDescription": "Obtention du diplôme d'Analyste programmeur (BAC+2) titre de niveau 3 à l'Exia.Cesi d'Arras."
     }, {
-        "title": "TTMP Degree",
-        "company": "@Creative School",
-        "periode": "JAN 2013 - DEC 2013",
-        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Baccalauréat Scientifique",
+        "company": "",
+        "periode": "2009 - 2010",
+        "htmlDescription": "Titulaire du Bac Scientifique option Science de la Vie et de la Terre au lycée Robespierre à Arras."
     }]    
 }

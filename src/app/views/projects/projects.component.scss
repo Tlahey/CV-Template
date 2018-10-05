@@ -1,3 +1,5 @@
+@import '../../../styleLibrary';
+
 mat-card{
     padding-left: 30px !important;
     .custom-content{
@@ -21,6 +23,22 @@ mat-card{
                     background-color: #5da4d9;
                     padding: 14px;
                     color: white;
+                }
+            }
+            .description{
+                mat-chip{
+                    mat-icon{
+                        transform: scale(1); 
+                        fill: $color-grey;
+                        &.margin-text{
+                            margin-right:6px; 
+                        }
+                    }
+                }
+            }
+            .link{
+                mat-icon{
+                    cursor: pointer;
                 }
             }
             div{

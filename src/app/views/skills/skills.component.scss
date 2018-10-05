@@ -1,3 +1,5 @@
+@import '../../../styleLibrary';
+
 :host {
     width: 100%;
 
@@ -5,11 +7,38 @@
         padding: 30px !important;
 
         .skills-bloc{
-            padding-bottom: 26px;
+            padding-bottom: 06px;
         }
         .rate-bar{
             margin: 0 auto;
             width:75%;
+        }
+        .skill-information{
+            margin-top: 14px;
+
+            .skill-name-value{
+                mat-icon{
+                    font-size: unset; 
+                    margin-right: 4px;
+                    fill: $color-grey;
+                }
+            }
+
+            ::ng-deep app-progress{
+                .progress{
+                    background-color: #d6d6d6;
+                    border-radius: 10px;
+                    height:6px;
+                    .determinate{
+                        background-color: #4783c2;
+                        border-radius: 10px;
+                        .circle{
+                            height: 16px;
+                            width: 16px;
+                        }
+                    }
+                }
+            }
         }
 
         mat-expansion-panel{

@@ -8,19 +8,22 @@
 
     <div *ngFor="let projet of Projects.projects" class="project" fxLayout="row" fxLayoutAlign="center center">
         <div class="title" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
-            <div>{{ projet.title }}</div>
-          </div>
-          <div class="description" fxFlex="60" fxLayout="column" fxLayoutAlign="center center">
-            <p>
-              {{ projet.htmlDescription }}
-            </p>
-            <mat-chip-list>
-              <mat-chip *ngFor="let application of projet.usedApplications">{{ application }}</mat-chip>
-            </mat-chip-list>
-          </div>
-          <div class="link" fxFlex="20" fxLayout="row" fxLayoutAlign="center center">
-            <mat-icon svgIcon="mdi:bitbucket" matTooltip="Code bitbucket" (click)="navigateNewTab(projet.htmlDescription)"></mat-icon>
-          </div>
+          <div>{{ projet.title }}</div>
+        </div>
+        <div class="description" fxFlex fxLayout="column" fxLayoutAlign="center center">
+          <p>
+            {{ projet.htmlDescription }}
+          </p>
+          <mat-chip-list>
+            <mat-chip *ngFor="let application of projet.usedApplications">
+              <mat-icon [svgIcon]="application.icon" *ngIf="application.icon != null" [ngClass]="{'margin-text': application.name != null}"></mat-icon>
+              {{ application.name }}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+        <div class="link" fxFlex="20" fxLayout="row" fxLayoutAlign="center center" *ngIf="projet.href != null">
+          <mat-icon svgIcon="mdi:bitbucket" matTooltip="Code bitbucket" (click)="navigateNewTab(projet.href)"></mat-icon>
+        </div>
     </div>
 
   </mat-card-content>

@@ -1,8 +1,26 @@
  {
     "icon": "flight",
-    "title": "Interestes",
+    "title": "Intérêts",
     "hobbies": [{
         "icon": "photo_camera",
         "tooltip": "Photo"
+    }, {
+        "icon": "theaters",
+        "tooltip": "Cinéma / Films"
+    }, { 
+        "icon": "music_note",
+        "tooltip": "Musique guitare"
+    }, {
+        "icon": "computer",
+        "tooltip": "Informatique"
+    }, {
+        "icon": "videogame_asset",
+        "tooltip": "Jeux vidéos"
+    }, {
+        "icon": "pool",
+        "tooltip": "Piscine"
+    }, {
+        "icon": "directions_bike",
+        "tooltip": "Vélo"
     }]
  }

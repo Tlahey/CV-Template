@@ -31,6 +31,7 @@ export class AppComponent implements OnInit {
 
   constructor(private informationService : InformationsService, iconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     iconRegistry.addSvgIconSetInNamespace('mdi', sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/mdi.svg'))
+    iconRegistry.addSvgIconSetInNamespace('custom', sanitizer.bypassSecurityTrustResourceUrl('/assets/icons/custom.svg'))
     this.isLoading = true;
     this.informationService.getLoading().subscribe(loading => this.isLoading = loading);
     this.informationService.getUserInformations().subscribe(x => this.Results = x);

@@ -51,7 +51,7 @@ aside{
         }
 
         &:first-child{
-          margin-top: 10px; 
+          margin-top: 24px;
         }
 
         .content-text{
@@ -69,17 +69,30 @@ aside{
             margin-top: 0px;
             margin-bottom: 20px;
           }
-          .skill-content{
+          &.skill-content{
             padding-right: 30px;
+            .skill-item{
+              margin-bottom: 20px;
+              mat-icon{
+                font-size: unset; 
+                margin-right: 12px;
+              }
+            }
           }
 
           .address,
           .mail,
           .phone-number{
           
+            /*
             &:first-child{
               margin-bottom: 20px;
             }
+            */
+            .margin-information{
+              margin-bottom: 20px;
+            }
+
             span{
               opacity: 0.7;
               font-weight: 300;

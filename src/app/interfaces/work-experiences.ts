@@ -5,6 +5,6 @@ export interface IWorkExperiences {
         title: string,
         company: string,
         periode: string,
-        htmlDescription: string
+        htmlDescription: string | Array<string>
     }>
 }

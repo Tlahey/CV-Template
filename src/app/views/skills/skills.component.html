@@ -24,12 +24,20 @@
         <!-- CONTENT -->
         <div fxLayout="row wrap" class="skills-bloc">
             <!-- ELEMENT -->
+            <div fxFlex="100" fxLayout="column" *ngFor="let skill of content.pannelContent" class="skill-information">
+                <div class="skill-name-value" fxLayout="row" fxLayoutAlign="start center" >
+                    <mat-icon *ngIf="skill.icon != undefined" [svgIcon]="skill.icon"></mat-icon>
+                    <span>{{ skill.skillName }}</span>
+                </div>
+                <app-progress [percent]="skill.progress"></app-progress>
+            </div>
+            <!--
             <div fxFlex="100" fxLayout="column" *ngFor="let skillElement of content.pannelContent">
               <h4>{{ skillElement.skillName }}</h4> 
               <div class="rate-bar">
                   <app-rate [note]="skillElement.rate"></app-rate>
               </div>
-            </div>
+            </div>-->
         </div>
       </mat-expansion-panel>
     </mat-accordion>

@@ -10,6 +10,7 @@
           <li fxLayout="row" 
               fxLayoutAlign="center center" 
               [matTooltip]="item.tooltip"
+              (click)="openInNewTab(item.url)"
               *ngFor="let item of Contact.content">
             <mat-icon [svgIcon]="item.icon"></mat-icon>
           </li>

@@ -25,7 +25,9 @@ mat-card{
   mat-card-content{
 
     padding-left: 22%;
-
+    &.no-padding{
+      padding-left: 0;
+    }
     .custom-content-wrapper{
     
       &:not(:first-child){

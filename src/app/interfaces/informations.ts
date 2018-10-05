@@ -38,8 +38,11 @@ export interface IInformations {
         zipCode: number
     };
 
-    skills: Array<{
-        skillName: string,
-        progress: number
-    }>;
+    skills: {
+        title: string,
+        content: Array<{
+            skillName: string,
+            progress: number
+        }>
+    }
 }

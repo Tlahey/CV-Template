@@ -1,20 +1,25 @@
 {
     "icon": "business_center",
-    "title": "Work Experience",
+    "title": "Expériences profesionnelles",
     "content": [{
-        "title": "UI/UX Designer",
-        "company": "@Academy",
-        "periode": "JAN 2013 - DEC 2013",
-        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Ingénieur Informatique",
+        "company": "@groupenumen",
+        "periode": "FEVR 2015 - Aujourd'hui",
+        "htmlDescription": "Ingénieur informatique chez Numen Solutions à Marcq-en-Baroeul. Développement de zéro d'une application de Case Management en mode agile permettant de partager des documents et de les archiver (GED / SAE). Ma mission .... prises de décisions + environnement Dokcer"
     }, {
-        "title": "Creative Director",
-        "company": "@DeviserWeb",
-        "periode": "JAN 2013 - DEC 2013",
-        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Stage développeur informatique",
+        "company": "@groupenumen",
+        "periode": "MARS 2014 - SEPT 2014",
+        "htmlDescription": "Stage de 4ème année, la mission était de maintenir l'application GED / SAE, de développer un outil en interne de gestion du temps passé par tâche."
     }, {
-        "title": "Graphics Director",
-        "company": "@Creative Wrold",
-        "periode": "JAN 2013 - DEC 2013",
-        "htmlDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        "title": "Crédit Agricole Nord de France",
+        "company": "@ca_ndf",
+        "periode": "JUIL 2013 - AOUT 2013",
+        "htmlDescription": "Job de remplacement au siège du Crédit Agricole Nord De France Lille. Mission : Réalisaton d’applicatons pour le CA (Technologie ASPX .NET)"
+    }, {
+        "title": "Stage au point passerelle",
+        "company": "",
+        "periode": "JANV 2013 - AVRI 2013",
+        "htmlDescription": "Stage au Point Passerelle (Arras), associaton du Crédit Agricole. Mission : Amélioraton du site intranet, automatisation des statistiques sous format Pdf / Csv, ajout d’une interface administrateur (Technologie ASP)"
     }]    
 }

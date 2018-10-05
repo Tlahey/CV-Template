@@ -5,6 +5,6 @@ export interface IEducations {
         title: string,
         company: string,
         periode: string,
-        htmlDescription: string
+        htmlDescription: string | Array<string>
     }>
 }

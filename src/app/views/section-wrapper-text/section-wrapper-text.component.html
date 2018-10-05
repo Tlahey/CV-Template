@@ -7,13 +7,13 @@
           <h2>{{Informations.title}}</h2>
       </mat-card-title>
     </mat-card-header>
-    <mat-card-content class="custom-content">
+    <mat-card-content class="custom-content" [ngClass]="{'no-padding': (Informations.hobbies != undefined)}">
       <div class="custom-content-wrapper" *ngFor="let data of Informations?.content">
         <h3>{{ data.title }} <span>{{ data.company }}</span></h3>
         <span>{{ data.periode }}</span>
-        <p>{{ data.htmlDescription }} </p>
+        <p style="text-align: justify; text-justify: inter-word;" [innerHTML]="data.htmlDescription"></p>
       </div>
-      <div class="custom-content-wrapper" *ngIf="Informations.hobbies != undefined" fxLayout="row" fxLayoutAlign="space-evenly center">
+      <div class="custom-content-wrapper" *ngIf="Informations.hobbies != undefined" fxLayout="row" fxLayoutAlign="space-evenly center" >
           <mat-icon *ngFor="let hobbie of Informations?.hobbies" [matTooltip]="hobbie.tooltip">{{ hobbie.icon }}</mat-icon>
       </div>
     </mat-card-content>

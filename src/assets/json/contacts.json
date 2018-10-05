@@ -4,14 +4,14 @@
     "content": [{
         "icon": "mdi:facebook",
         "tooltip": "Facebook",
-        "url": ""
+        "url": "https://www.facebook.com/antoine.vendeville.3"
     }, {
-        "icon": "mdi:facebook",
-        "tooltip": "Facebook",
-        "url": ""
+        "icon": "mdi:twitter",
+        "tooltip": "Twitter",
+        "url": "https://twitter.com/_Tlahey"
     }, {
-        "icon": "mdi:facebook",
-        "tooltip": "Facebook",
-        "url": ""
-    }]    
+        "icon": "mdi:linkedin",
+        "tooltip": "Linkedin",
+        "url": "https://www.linkedin.com/in/antoine-vendeville-7ab60213b/"
+    }]
 }

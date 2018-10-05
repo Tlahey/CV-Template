@@ -18,7 +18,7 @@
                 <mat-icon >{{ Informations?.description.icon }}</mat-icon>
             </div>
             <div fxFlex class="content-text border-bottom">
-            <p>
+            <p style="text-align: justify; text-justify: inter-word;">
                 {{ Informations?.description.content }}
             </p>
             </div>
@@ -42,7 +42,7 @@
                 <mat-icon >{{ Informations?.phones.icon }}</mat-icon>
             </div>
             <div fxFlex class="content-text border-bottom">
-                <div class="phone-number" *ngFor="let phone of Informations?.phones.content">
+                <div class="phone-number" *ngFor="let phone of Informations?.phones.content; let last = last;" [ngClass]="{'margin-information': last == false}">
                     <h4><a [href]="'tel:' + phone.number">{{ phone.number }}</a></h4> <!-- Number -->             
                     <span>{{phone.legend}}</span> 
                 </div>
@@ -55,7 +55,7 @@
                 <mat-icon >{{ Informations?.emails.icon }}</mat-icon>
             </div>
             <div fxFlex class="content-text border-bottom">
-                <div class="mail" *ngFor="let email of Informations?.emails.content">
+                <div class="mail" *ngFor="let email of Informations?.emails.content; let last = last;" [ngClass]="{'margin-information': last == false}">
                     <h4><a [href]="'mailto:' + email.email">{{ email.email }}</a></h4>
                     <span>{{email.legend}}</span> 
                 </div>
@@ -84,9 +84,13 @@
                 <mat-icon >equalizer</mat-icon>
             </div>
             <div fxFlex class="content-text skill-content">
-                <h3>Personnal Skills</h3>
-                <div *ngFor="let skill of Informations?.skills" >
-                    <span>{{ skill.skillName }}</span>
+                <h3>{{ Informations?.skills.title }}</h3>
+                <div *ngFor="let skill of Informations?.skills.content" class="skill-item" >
+                    <div fxLayout="row" 
+                        fxLayoutAlign="start center" >
+                        <mat-icon *ngIf="skill.icon != undefined" [svgIcon]="skill.icon"></mat-icon>
+                        <span>{{ skill.skillName }}</span>
+                    </div>
                     <app-progress [percent]="skill.progress"></app-progress>
                 </div>
             </div>

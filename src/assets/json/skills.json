@@ -3,95 +3,100 @@
    "content": [{
        "pannelTitle": "Technologies",
        "pannelContent": [{
-           "skillName": "Angular 1",
-           "rate": 4
+           "icon": "mdi:angular", 
+           "skillName": "AngularJS",
+           "progress": 50
        },{
+            "icon": null, 
             "skillName": "Angular 2+",
-            "rate": 2
+            "progress": 50
         },{
+            "icon": null, 
             "skillName": "HTML 5 / Javascript / jQuery / CSS 3 / SASS / LESS",
-            "rate": 4
+            "progress": 4
         },{
+            "icon": null, 
             "skillName": "TypeScript",
-            "rate": 4
+            "progress": 4
         },{
             "skillName": "Node.js",
-            "rate": 4
+            "progress": 4
         },{
+            "icon": null, 
             "skillName": "Gulp / Bower",
-            "rate": 4
+            "progress": 4
         }]
    }, {
         "pannelTitle": "Langages",
         "pannelContent": [{
             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "rate": 1
+            "progress": 1
         },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 2
+             "progress": 2
          },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 3
+             "progress": 3
          }]
     }, {
         "pannelTitle": "Base de données",
         "pannelContent": [{
             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "rate": 1
+            "progress": 1
         },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 2
+             "progress": 2
          },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 3
+             "progress": 3
          }]
     }, {
         "pannelTitle": "Outils",
         "pannelContent": [{
             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "rate": 1
+            "progress": 1
         },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 2
+             "progress": 2
          },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 3
+             "progress": 3
          }]
     }, {
         "pannelTitle": "Administration système",
         "pannelContent": [{
             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "rate": 1
+            "progress": 1
         },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 2
+             "progress": 2
          },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 3
+             "progress": 3
          }]
     }, {
         "pannelTitle": "Gestion de projet",
         "pannelContent": [{
             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "rate": 1
+            "progress": 1
         },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 2
+             "progress": 2
          },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 3
+             "progress": 3
          }]
     }, {
         "pannelTitle": "Par le passé...",
         "pannelContent": [{
             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "rate": 1
+            "progress": 1
         },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 2
+             "progress": 2
          },{
              "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "rate": 3
+             "progress": 3
          }]
     }]
 }
