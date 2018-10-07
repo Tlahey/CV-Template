@@ -37,13 +37,18 @@
         
         <!-- HEADER -->
         <mat-expansion-panel-header fxLayout="row" fxLayoutAlign="space-between center" (click)="setStep(i)">
-          <mat-panel-title>
-            {{ content.pannelTitle }}
-          </mat-panel-title>
-          <mat-icon *ngIf="setIcon(i); else other_content" >keyboard_arrow_up</mat-icon>
-          <ng-template #other_content>
+            <mat-panel-title>
+                {{ content.pannelTitle }}
+            </mat-panel-title>
+            <mat-icon class="expend-icon" [ngClass]="{'showPanelIcon': setIcon(i) == true}">
+                keyboard_arrow_down
+            </mat-icon>
+            <!-- 
+            <mat-icon *ngIf="setIcon(i); else other_content" >keyboard_arrow_up</mat-icon>
+            <ng-template #other_content>
                 <mat-icon >keyboard_arrow_down</mat-icon>
             </ng-template>
+            -->
         </mat-expansion-panel-header>
 
         <!-- CONTENT -->

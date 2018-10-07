@@ -51,6 +51,19 @@
                     background: rgba(0,0,0,.04);
                 }
             }
+
+            mat-expansion-panel-header{
+                mat-icon{
+                    &.expend-icon{
+                        transition: transform 0.2s linear;
+                    }
+                    &.showPanelIcon{
+                        transform: rotate(0.5turn);
+                    }
+                }
+                
+            }
+
         }
     }
 
