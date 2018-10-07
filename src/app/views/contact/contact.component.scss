@@ -81,7 +81,7 @@
 }
 
 .circle-container {
-  @include distribute-on-circle(3, 20em, 6em, false); 
+  @include distribute-on-circle(5, 20em, 6em, false); 
   margin: 5em auto 0;
   border: solid 5px rgb(93, 164, 217);
 }

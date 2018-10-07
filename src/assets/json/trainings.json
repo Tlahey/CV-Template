@@ -3,7 +3,7 @@
     "title": "Formations",
     "content": [{
         "title": "Sécurité OWASP (3 jours)",
-        "company": "@Academy",
+        "company": "@ORSYS",
         "periode": "OCT 2018",
         "htmlDescription": "Sensibilisation et explication des différentes failles pouvant être exploité sur les sites internet. TP permettant de mettre en place des solutions pour sécuriser les accès, et bonnes pratiques de log."
     }, {

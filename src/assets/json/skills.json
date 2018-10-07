@@ -1,102 +1,132 @@
 {
-   "title": "Compétences informatique",
-   "content": [{
-       "pannelTitle": "Technologies",
-       "pannelContent": [{
-           "icon": "mdi:angular", 
-           "skillName": "AngularJS",
-           "progress": 50
-       },{
-            "icon": null, 
-            "skillName": "Angular 2+",
-            "progress": 50
-        },{
-            "icon": null, 
-            "skillName": "HTML 5 / Javascript / jQuery / CSS 3 / SASS / LESS",
-            "progress": 4
-        },{
-            "icon": null, 
-            "skillName": "TypeScript",
-            "progress": 4
-        },{
-            "skillName": "Node.js",
-            "progress": 4
-        },{
-            "icon": null, 
-            "skillName": "Gulp / Bower",
-            "progress": 4
-        }]
-   }, {
+    "title": "Compétences informatique",
+    "content": [{
+        "pannelTitle": "WEB",
+        "pannelContent": [
+            { "skillName": "HTML 5", "progress": 0, "icon": "mdi:language-html5"},
+            { "skillName": "CSS 3 / SASS / LESS", "progress": 0, "icon": "mdi:language-css3"},
+            { "skillName": "AngularJS", "progress": 0, "icon": "mdi:angularjs"},
+            { "skillName": "Angular 2+", "progress": 0, "icon": "mdi:angular"},
+            { "skillName": "TypeScript", "progress": 0, "icon": "mdi:language-typescript"},
+            { "skillName": "Javascript", "progress": 0, "icon": "mdi:language-javascript"},
+            { "skillName": "JQuery", "progress": 0, "icon": "mdi:jquery"},
+            { "skillName": "PHP", "progress": 0, "icon": "mdi:language-php"}
+        ]
+    },
+    {
+        "pannelTitle": "Serveur Web",
+        "pannelContent": [
+            { "skillName": "IIS", "progress": 0, "icon": null},
+            { "skillName": "NodeJs", "progress": 0, "icon": "mdi:nodejs"}
+        ]
+    },
+    {
+        "pannelTitle": "Librairie design",
+        "pannelContent": [
+            { "skillName": "Material Angular", "progress": 0, "icon": "mdi:material-design"},
+            { "skillName": "Bootstrap", "progress": 0, "icon": "mdi:bootstrap"}
+        ]
+    }, 
+    {
         "pannelTitle": "Langages",
-        "pannelContent": [{
-            "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "progress": 1
-        },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 2
-         },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 3
-         }]
-    }, {
+        "pannelContent": [
+            { "skillName": "", "progress": 0, "icon": "mdi:language-c"},
+            { "skillName": "", "progress": 0, "icon": "mdi:language-csharp"},
+            { "skillName": "VB", "progress": 0, "icon": null},
+            { "skillName": "Java EE", "progress": 0, "icon": "mdi:language-java"},
+            { "skillName": "XML", "progress": 0, "icon": "mdi:xml"},
+            { "skillName": "Powershell", "progress": 0, "icon": "mdi:powershell"}
+        ]
+    }, 
+    {
+        "pannelTitle": "Normes",
+        "pannelContent": [
+            { "skillName": "CMIS", "progress": 0, "icon": "custom:cmis"}
+        ]
+    },
+    {
+        "pannelTitle": "Architechture",
+        "pannelContent": [
+            { "skillName": "", "progress": 0, "icon": "mdi:dot-net"},
+            { "skillName": "REST", "progress": 0, "icon": null},
+            { "skillName": "SOAP", "progress": 0, "icon": null}
+        ]
+    },
+    {
         "pannelTitle": "Base de données",
-        "pannelContent": [{
-            "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "progress": 1
-        },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 2
-         },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 3
-         }]
-    }, {
+        "pannelContent": [
+            { "skillName": "Microsoft Access", "progress": 0, "icon": "custom:microsoft_access"},
+            { "skillName": "MySQL", "progress": 0, "icon": "custom:mysql"},
+            { "skillName": "Miscrosoft SQL", "progress": 0, "icon": null},
+            { "skillName": "PostgreSQL", "progress": 0, "icon": "custom:postgresql"}
+        ]
+    }, 
+    {
+        "pannelTitle": "Analyse",
+        "pannelContent": [
+            { "skillName": "Merise", "progress": 0, "icon": null},
+            { "skillName": "UML", "progress": 0, "icon": null}
+        ]
+    },
+    {
+        "pannelTitle": "OS",
+        "pannelContent": [
+            { "skillName": "Windows", "progress": 0, "icon": "mdi:windows"},
+            { "skillName": "MacOsx", "progress": 0, "icon": "mdi:apple"},
+            { "skillName": "Ubuntu / Centos", "progress": 0, "icon": "mdi:linux"}
+        ]
+    }, 
+    {
+        "pannelTitle": "Bureautique",
+        "pannelContent": [
+            { "skillName": "Office 365", "progress": 0, "icon": "mdi:office"},
+            { "skillName": "Microsoft Project", "progress": 0, "icon": "custom:microsoft_project"},
+            { "skillName": "Microsoft Visio", "progress": 0, "icon": "custom:visio"},
+            { "skillName": "iWork", "progress": 0, "icon": null},
+            { "skillName": "Visual Studio 2010 - 2017", "progress": 0, "icon": "mdi:visual-studio"},
+            { "skillName": "Visual Code", "progress": 0, "icon": "mdi:visual-studio-code" }
+        ]
+    },
+    {
+        "pannelTitle": "Gestionnaire",
+        "pannelContent": [
+            { "skillName": "Docker", "progress": 0, "icon": "mdi:docker"},
+            { "skillName": "Azure", "progress": 0, "icon": "mdi:azure"}
+        ]
+    },
+    {
+        "pannelTitle": "Gestionnaire de code source",
+        "pannelContent": [
+            { "skillName": "Git", "progress": 0, "icon": "mdi:git"},
+            { "skillName": "TFS", "progress": 0, "icon": null}
+        ]
+    },
+    {
+        "pannelTitle": "Projet",
+        "pannelContent": [
+            { "skillName": "Agile (scrum)", "progress": 0, "icon": "custom:scrum"},
+            { "skillName": "Méthode d'Analyse Rapide et de Planification (M.A.R.P.)", "progress": 0, "icon": null},
+            { "skillName": "Project Management Body of Knowledge (PMBOK)", "progress": 0, "icon": null}
+        ]
+    },
+    {
+        "pannelTitle": "Photo / Vidéo",
+        "pannelContent": [
+            { "skillName": "Adobe Photoshop", "progress": 0, "icon": "custom:photoshop"}
+        ]
+    },
+    {
         "pannelTitle": "Outils",
-        "pannelContent": [{
-            "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "progress": 1
-        },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 2
-         },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 3
-         }]
+        "pannelContent": [
+            { "skillName": "Gulp", "progress": 0, "icon": "custom:gulp"},
+            { "skillName": "Swagger", "progress": 0, "icon": "custom:swagger"}
+        ]
     }, {
-        "pannelTitle": "Administration système",
-        "pannelContent": [{
-            "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "progress": 1
-        },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 2
-         },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 3
-         }]
-    }, {
-        "pannelTitle": "Gestion de projet",
-        "pannelContent": [{
-            "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "progress": 1
-        },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 2
-         },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 3
-         }]
-    }, {
-        "pannelTitle": "Par le passé...",
-        "pannelContent": [{
-            "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-            "progress": 1
-        },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 2
-         },{
-             "skillName": "Bootstrap 3 / Jquery / SASS / LESS",
-             "progress": 3
-         }]
+        "pannelTitle": "Langue",
+        "pannelContent": [
+            { "skillName": "Français", "progress": 0, "icon": null},
+            { "skillName": "Anglais", "progress": 0, "icon": null},
+            { "skillName": "Allemand", "progress": 0, "icon": null}
+        ]
     }]
 }

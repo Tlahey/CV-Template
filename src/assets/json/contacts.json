@@ -13,5 +13,13 @@
         "icon": "mdi:linkedin",
         "tooltip": "Linkedin",
         "url": "https://www.linkedin.com/in/antoine-vendeville-7ab60213b/"
+    }, {
+        "icon": "mdi:at",
+        "tooltip": "Mail",
+        "url": "mailto:a.vendeville@orange.fr"
+    }, {
+        "icon": "mdi:phone",
+        "tooltip": "Téléphone",
+        "url": "tel:0607005168"
     }]
 }

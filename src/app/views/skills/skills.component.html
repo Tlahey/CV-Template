@@ -19,7 +19,7 @@
     
     <mat-card *ngIf="value != ''" id="filter-card">
         <div id="card-content">
-            <div *ngFor="let skill of (skill.content | skillFilter : value); let length = count;">                
+            <div *ngFor="let skill of (skill.content | skillFilter : value)" class="skill-information">                
                 <div class="skill-name-value" fxLayout="row" fxLayoutAlign="start center" >
                     <mat-icon *ngIf="skill.icon != undefined" [svgIcon]="skill.icon"></mat-icon>
                     <span>{{ skill.skillName }}</span>
