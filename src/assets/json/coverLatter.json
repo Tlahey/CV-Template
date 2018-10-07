@@ -1,0 +1,17 @@
+{
+    "title": {
+        "date": "",
+        "name": "",
+        "profile": ""
+    },
+    "content":{
+        "title": "",
+        "contentHtml": "",
+        "footer": ""
+    },
+    "signature":{
+        "name": "",
+        "profile": "",
+        "town": ""
+    }
+}

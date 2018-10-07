@@ -11,6 +11,7 @@ import { IInterestes } from './interfaces/interestes';
 import { IInformations } from './interfaces/informations';
 import { ITrainings } from './interfaces/trainings';
 import { ICertifications } from './interfaces/certifications';
+import { ICoverLatter } from './interfaces/cover-latter';
 
 // https://hackernoon.com/understanding-creating-and-subscribing-to-observables-in-angular-426dbf0b04a3 
 
@@ -23,7 +24,8 @@ export interface IResults{
   'Skills': ISkills,
   'Contacts': IContacts,
   'Trainings': ITrainings,
-  'Certifications': ICertifications
+  'Certifications': ICertifications,
+  'CoverLatter': ICoverLatter
 }
 
 @Injectable()
@@ -67,11 +69,12 @@ export class InformationsService {
       this.http.get<IContacts>('./assets/json/contacts.json'),
       this.http.get<ITrainings>('./assets/json/trainings.json'),
       this.http.get<ICertifications>('./assets/json/certifications.json'),
+      this.http.get<ICoverLatter>('./assets/json/coverLatter.json')
     ])
     .pipe(map(
       // On format les données pour avoir 1 seul JSON
       (datas : Array<any>) => {
-        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs, uSkills, uContact, uTrain, uCertif ] = datas;
+        const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs, uSkills, uContact, uTrain, uCertif, uCoverLatter ] = datas;
         
         uEducation.content = (<IEducations>uEducation).content.map(e => {
           if(Array.isArray(e.htmlDescription))
@@ -88,7 +91,8 @@ export class InformationsService {
           'Skills': uSkills,
           'Contacts': uContact,
           'Trainings': uTrain,
-          'Certifications': uCertif
+          'Certifications': uCertif,
+          'CoverLatter': uCoverLatter
         } as IResults;
       }
     ))
