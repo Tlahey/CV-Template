@@ -3,8 +3,28 @@
 :host {
     width: 100%;
 
+    #filter-card{
+        width: unset !important;
+    }
+    
     mat-card{
         padding: 30px !important;
+
+        ::ng-deep app-progress{
+            .progress{
+                background-color: #d6d6d6;
+                border-radius: 10px;
+                height:6px;
+                .determinate{
+                    background-color: #4783c2;
+                    border-radius: 10px;
+                    .circle{
+                        height: 16px;
+                        width: 16px;
+                    }
+                }
+            }
+        }
 
         .skills-bloc{
             padding-bottom: 06px;
@@ -21,22 +41,6 @@
                     font-size: unset; 
                     margin-right: 4px;
                     fill: $color-grey;
-                }
-            }
-
-            ::ng-deep app-progress{
-                .progress{
-                    background-color: #d6d6d6;
-                    border-radius: 10px;
-                    height:6px;
-                    .determinate{
-                        background-color: #4783c2;
-                        border-radius: 10px;
-                        .circle{
-                            height: 16px;
-                            width: 16px;
-                        }
-                    }
                 }
             }
         }

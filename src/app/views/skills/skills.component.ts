@@ -1,4 +1,4 @@
-import { ISkills } from './../../interfaces/skills';
+import { ISkillsContent, ISkills } from './../../interfaces/skills';
 import { Component, OnInit } from '@angular/core';
 import { InformationsService } from '../../informations.service';
 
@@ -10,6 +10,8 @@ import { InformationsService } from '../../informations.service';
 export class SkillsComponent implements OnInit {
 
   public skill : ISkills;
+  public value : string = "";
+  public step : number = -1;
 
   constructor(private informationService : InformationsService) { 
     this.informationService.getUserInformations().subscribe(x => this.skill = x.Skills);
@@ -18,7 +20,7 @@ export class SkillsComponent implements OnInit {
   ngOnInit() {
   }
  
-  step : number = -1;
+
   setStep(index: number) {
     if(this. step == index)
       this.step = -1;
@@ -30,5 +32,21 @@ export class SkillsComponent implements OnInit {
     if(index == this.step)
       return true;
     return false;
+  }
+}
+
+
+import { Pipe, PipeTransform } from '@angular/core';
+@Pipe({name: 'skillFilter'})
+export class SkillFilterPipe implements PipeTransform {
+  transform(skills: Array<ISkillsContent>, text: string): Array<any> {
+    let tabSkills = [];
+    skills.forEach(skill => {
+      skill.pannelContent.forEach(contentPannel => {
+        if(contentPannel.skillName.toLowerCase().includes(text.toLocaleLowerCase()))
+          tabSkills.push(contentPannel);
+      })
+    });
+    return tabSkills;
   }
 }

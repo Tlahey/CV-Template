@@ -1,5 +1,5 @@
 import { ContactComponent } from './views/contact/contact.component';
-import { SkillsComponent } from './views/skills/skills.component';
+import { SkillsComponent, SkillFilterPipe } from './views/skills/skills.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -16,6 +16,7 @@ import { ProjectsComponent } from './views/projects/projects.component';
 import { CoverLatterComponent } from './views/cover-latter/cover-latter.component';
 import { RateComponent } from './components/rate/rate.component';
 import { TrainingsAndCertificationsComponent } from './views/trainings-and-certifications/trainings-and-certifications.component';
+import { FormsModule } from '@angular/forms';
 
 export const routes: Routes = [
   { path: '',   redirectTo: '/informations', pathMatch: 'full' },
@@ -39,13 +40,15 @@ export const routes: Routes = [
     SkillsComponent,
     ContactComponent,
     RateComponent,
-    TrainingsAndCertificationsComponent
+    TrainingsAndCertificationsComponent,
+    SkillFilterPipe
   ],
   imports: [
     MaterialModule,
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [InformationsService],

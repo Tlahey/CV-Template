@@ -7,7 +7,32 @@
     </mat-card-header>
     <mat-card-content class="custom-content" >
   
-    <mat-accordion class="example-headers-align">
+    <div style="margin-bottom:14px; width: 100%;" fxLayout="row" fxLayoutAlign="end center">
+        <mat-form-field appearance="outline" fxFlex="45">
+            <mat-label>Filtrer les compétances</mat-label>
+            <input matInput type="text" placeholder="Compétances" [(ngModel)]="value">
+            <button mat-button *ngIf="value" matSuffix mat-icon-button aria-label="Clear" (click)="value=''">
+                <mat-icon>close</mat-icon>
+            </button>
+        </mat-form-field>
+    </div>
+    
+    <mat-card *ngIf="value != ''" id="filter-card">
+        <div id="card-content">
+            <div *ngFor="let skill of (skill.content | skillFilter : value); let length = count;">                
+                <div class="skill-name-value" fxLayout="row" fxLayoutAlign="start center" >
+                    <mat-icon *ngIf="skill.icon != undefined" [svgIcon]="skill.icon"></mat-icon>
+                    <span>{{ skill.skillName }}</span>
+                </div>
+                <app-progress [percent]="skill.progress"></app-progress>
+            </div>
+            <div *ngIf="(skill.content | skillFilter : value).length == 0" fxLayout="row" fxLayoutAlign="center center">
+                Aucun résultats n'a été trouvé
+            </div>
+        </div>
+    </mat-card>
+
+    <mat-accordion class="example-headers-align" *ngIf="value == ''">
       <mat-expansion-panel *ngFor="let content of skill.content; let i = index" hideToggle="true">
         
         <!-- HEADER -->
@@ -31,13 +56,6 @@
                 </div>
                 <app-progress [percent]="skill.progress"></app-progress>
             </div>
-            <!--
-            <div fxFlex="100" fxLayout="column" *ngFor="let skillElement of content.pannelContent">
-              <h4>{{ skillElement.skillName }}</h4> 
-              <div class="rate-bar">
-                  <app-rate [note]="skillElement.rate"></app-rate>
-              </div>
-            </div>-->
         </div>
       </mat-expansion-panel>
     </mat-accordion>

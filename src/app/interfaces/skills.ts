@@ -1,10 +1,12 @@
 export interface ISkills {
     title : string;
-    content : Array<{
-        pannelTitle: string,
-        pannelContent: Array<{
-            skillName: string,
-            rate: number
-        }>
-    }>;
+    content : Array<ISkillsContent>
+}
+
+export interface ISkillsContent{
+    pannelTitle: string,
+    pannelContent: Array<{
+        skillName: string,
+        progress: number
+    }>
 }
