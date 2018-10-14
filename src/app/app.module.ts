@@ -17,6 +17,9 @@ import { CoverLatterComponent } from './views/cover-latter/cover-latter.componen
 import { RateComponent } from './components/rate/rate.component';
 import { TrainingsAndCertificationsComponent } from './views/trainings-and-certifications/trainings-and-certifications.component';
 import { FormsModule } from '@angular/forms';
+import { NgxAnalyticsModule } from 'ngx-analytics';
+import { NgxAnalyticsGoogleAnalytics } from 'ngx-analytics/ga';
+ 
 
 export const routes: Routes = [
   { path: '',   redirectTo: '/informations', pathMatch: 'full' },
@@ -25,7 +28,7 @@ export const routes: Routes = [
   { path: 'coverLatter', component: CoverLatterComponent },
   { path: 'skills', component: SkillsComponent },
   { path: 'contacts', component: ContactComponent },
-  { path: 'tainings-and-certifications', component: TrainingsAndCertificationsComponent }
+  { path: 'trainings-and-certifications', component: TrainingsAndCertificationsComponent }
 ];
 
 @NgModule({
@@ -49,7 +52,8 @@ export const routes: Routes = [
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    NgxAnalyticsModule.forRoot([NgxAnalyticsGoogleAnalytics])
   ],
   providers: [InformationsService],
   bootstrap: [AppComponent],

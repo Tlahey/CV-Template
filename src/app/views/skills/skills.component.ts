@@ -1,6 +1,11 @@
 import { ISkillsContent, ISkills } from './../../interfaces/skills';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { InformationsService } from '../../informations.service';
+import { debounceTime } from 'rxjs/operators';
+import 'rxjs/add/operator/debounceTime';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/distinctUntilChanged';
+
 
 @Component({
   selector: 'app-skills',
@@ -13,13 +18,32 @@ export class SkillsComponent implements OnInit {
   public value : string = "";
   public step : number = -1;
 
-  constructor(private informationService : InformationsService) { 
+  @ViewChild('input') input;
+  constructor(
+    private informationService : InformationsService,
+    private ngxAnalytics: NgxAnalytics
+  ) { 
     this.informationService.getUserInformations().subscribe(x => this.skill = x.Skills);
   }
 
   ngOnInit() {
+
   }
  
+  ngAfterViewInit(){
+    this.input.valueChanges
+      .debounceTime(2000) 
+      .distinctUntilChanged() 
+      .subscribe(text => {
+        this.ngxAnalytics.eventTrack.next({
+          action: 'Search', 
+          properties: { 
+            category: 'Skill',
+            label: text
+          },
+        });
+      });
+  }
 
   setStep(index: number) {
     if(this. step == index)
@@ -37,6 +61,7 @@ export class SkillsComponent implements OnInit {
 
 
 import { Pipe, PipeTransform } from '@angular/core';
+import { NgxAnalytics } from 'ngx-analytics';
 @Pipe({name: 'skillFilter'})
 export class SkillFilterPipe implements PipeTransform {
   transform(skills: Array<ISkillsContent>, text: string): Array<any> {

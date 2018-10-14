@@ -2,32 +2,50 @@
     <div class="navigation">
         <nav fxLayout="column" fxLayoutAlign="space-around end">
             <li>
-                <a routerLink="/informations" matTooltip="Mon parcours" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left">
+                <a routerLink="/informations" matTooltip="Mon parcours" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left"
+                    ngx-analyticsOn="click"
+                    angularticsAction="Navigation"
+                    angularticsLabel="informations"  >
                     <mat-icon>fingerprint</mat-icon>
                 </a>
             </li>
             <li>
-                <a routerLink="/projects" matTooltip="Mes projets" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left">
+                <a routerLink="/projects" matTooltip="Mes projets" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left"
+                    ngx-analyticsOn="click"
+                    angularticsAction="Navigation"
+                    angularticsLabel="projects" >
                     <mat-icon svgIcon="mdi:code-braces"></mat-icon>
                 </a>
             </li>
             <li>
-                <a routerLink="/skills" matTooltip="Mes compétances" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left">
+                <a routerLink="/skills" matTooltip="Mes compétances" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left"
+                    ngx-analyticsOn="click"
+                    angularticsAction="Navigation"
+                    angularticsLabel="skills" >
                     <mat-icon svgIcon="mdi:brain"></mat-icon>
                 </a>
             </li>
             <li>
-                <a routerLink="/tainings-and-certifications" matTooltip="Formations et certifications" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left">
+                <a routerLink="/trainings-and-certifications" matTooltip="Formations et certifications" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left"
+                    ngx-analyticsOn="click"
+                    angularticsAction="Navigation"
+                    angularticsLabel="trainingAndCertifications" >
                     <mat-icon svgIcon="mdi:certificate"></mat-icon>
                 </a>
             </li>
             <li>
-                <a routerLink="/coverLatter" matTooltip="Lettre de motivation" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left">
+                <a routerLink="/coverLatter" matTooltip="Lettre de motivation" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left"
+                    ngx-analyticsOn="click"
+                    angularticsAction="Navigation"
+                    angularticsLabel="coverLatter" >
                     <mat-icon svgIcon="mdi:file-document-outline"></mat-icon>
                 </a>
             </li>
             <li>
-                <a routerLink="/contacts" matTooltip="Me contacter" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left">
+                <a routerLink="/contacts" matTooltip="Me contacter" fxLayout="row" fxLayoutAlign="center center" matTooltipPosition="left"
+                    ngx-analyticsOn="click"
+                    angularticsAction="Navigation"
+                    angularticsLabel="contacts" >
                     <mat-icon svgIcon="mdi:facebook"></mat-icon>
                 </a>
             </li>
