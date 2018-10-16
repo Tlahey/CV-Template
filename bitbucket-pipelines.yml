@@ -9,7 +9,9 @@ pipelines:
   default:
     - step:
         script:
-          - apt-get update && apt-get npm
+          - apt-get update
+          - apt-get npm
           - apt-get -qq install git-ftp
           - npm install
-          - git ftp push --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://ftpperso.free.fr
+          - ng serve --build
+          - git ftp push --syncroot dist/ --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://ftpperso.free.fr/cv
