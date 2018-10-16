@@ -12,6 +12,5 @@ pipelines:
           - apt-get update
           - apt-get -qq install git-ftp
           - npm install
-          - npm install -g @angular/cli
-          - ng serve --build
+          - ng build
           - git ftp push --syncroot dist/ --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://ftpperso.free.fr/cv
