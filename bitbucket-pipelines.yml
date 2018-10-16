@@ -11,6 +11,7 @@ pipelines:
         script:
           - apt-get update
           - apt-get -qq install npm
+          - apt-get -qq install node
           - apt-get -qq install git-ftp
           - npm install
           - ng serve --build
