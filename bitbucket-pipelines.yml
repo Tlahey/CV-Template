@@ -10,7 +10,7 @@ pipelines:
     - step:
         script:
           - apt-get update
-          - apt-get npm
+          - apt-get -qq install npm
           - apt-get -qq install git-ftp
           - npm install
           - ng serve --build
