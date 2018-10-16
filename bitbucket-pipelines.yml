@@ -14,4 +14,5 @@ pipelines:
           - npm install
           - npm install -g @angular/cli@6.2.4
           - ng build
-          - git ftp push --syncroot dist/ --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://ftpperso.free.fr/cv
+          - git status
+          #- git ftp push --syncroot dist/ --user $FTP_USERNAME --passwd $FTP_PASSWORD ftp://ftpperso.free.fr/cv
