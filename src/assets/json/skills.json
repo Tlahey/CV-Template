@@ -132,7 +132,7 @@
             { "skillName": "Gulp", "progress": 90, "icon": "custom:gulp"},
             { "skillName": "Bower", "progress": 95, "icon": null },
             { "skillName": "Swagger", "progress": 80, "icon": "custom:swagger"},
-            { "skillName": "Kibana", "progress": 60, "icon": null},
+            { "skillName": "Kibana", "progress": 60, "icon": null}
         ]
     }, {
         "pannelTitle": "Langue",
