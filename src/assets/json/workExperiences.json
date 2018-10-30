@@ -5,21 +5,44 @@
         "title": "Ingénieur Informatique",
         "company": "@groupenumen",
         "periode": "FEVR 2015 - Aujourd'hui",
-        "htmlDescription": "Ingénieur informatique chez Numen Solutions à Marcq-en-Baroeul. Développement de zéro d'une application de Case Management en mode agile permettant de partager des documents et de les archiver (GED / SAE). Ma mission .... prises de décisions + environnement Dokcer"
+        "htmlDescription": [
+            "Ingénieur informatique chez Numen Solutions à Marcq-en-Baroeul. ",
+            "<ul>",
+            "<li>Création d’une application de Case Management en mode SAAS.</li>",
+            "<li>Travail en agile, prise de décision, documentation technique / spécification, organisation et planification. </li>",
+            "<li>Mes principales missions ont été d’intégrer les nouvelles technologies de développement aisni que les produits développés par le groupe.</li>",
+            "<li>Principales technologies : Angular, NodeJs, TypeScript, Docker</li>",
+            "</ul>",
+            "Durant mes missons j'ai pu aussi créer un indexeur et un outil de recherche à facette en utilisant ElasticSearch"
+        ] 
     }, {
         "title": "Stage développeur informatique",
         "company": "@groupenumen",
         "periode": "MARS 2014 - SEPT 2014",
-        "htmlDescription": "Stage de 4ème année, la mission était de maintenir l'application GED / SAE, de développer un outil en interne de gestion du temps passé par tâche."
+        "htmlDescription": [
+            "Stage de 4ème année, la mission était de maintenir l'application GED / SAE, de développer un outil en interne de gestion du temps passé par tâche.", 
+            "<ul>",
+            "<li>Aide au développement d'une application de gestion des temps pour l'entreprise en C# </li>",
+            "<li>Test et recettage et corrections de bug reporté sur l'application Easyfolder </li>",
+            "<li>Création d'une application de gestion de compte pour un coffre fort numérique utilisant la norme NF Z42-020</li>",
+            "</ul>"
+        ]
     }, {
         "title": "Crédit Agricole Nord de France",
         "company": "@ca_ndf",
         "periode": "JUIL 2013 - AOUT 2013",
-        "htmlDescription": "Job de remplacement au siège du Crédit Agricole Nord De France Lille. Mission : Réalisaton d’applicatons pour le CA (Technologie ASPX .NET)"
+        "htmlDescription": [
+            "Job de remplacement au siège du Crédit Agricole Nord De France Lille. Mission : Réalisaton d’applicatons pour le CA (Technologie ASPX .NET)",
+            "Intégration des webservices dans l'ensemble des applications du groupe"
+        ]
     }, {
         "title": "Stage au point passerelle",
         "company": "",
         "periode": "JANV 2013 - AVRI 2013",
-        "htmlDescription": "Stage au Point Passerelle (Arras), associaton du Crédit Agricole. Mission : Amélioraton du site intranet, automatisation des statistiques sous format Pdf / Csv, ajout d’une interface administrateur (Technologie ASP)"
+        "htmlDescription": [
+            "Stage au Point Passerelle (Arras), associaton du Crédit Agricole. </br>",
+            "Mission : Amélioraton du site intranet, automatisation des statistiques sous format Pdf / Csv, ajout d’une interface administrateur (Technologie ASP)",
+            "Utilisation de librairiess comme iText"
+        ]
     }]    
 }

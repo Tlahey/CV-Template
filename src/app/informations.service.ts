@@ -75,12 +75,14 @@ export class InformationsService {
       // On format les données pour avoir 1 seul JSON
       (datas : Array<any>) => {
         const [ uInformations, uWorkExperiences, uEducation, uInterestes, uProjetcs, uSkills, uContact, uTrain, uCertif, uCoverLatter ] = datas;
-        
-        uEducation.content = (<IEducations>uEducation).content.map(e => {
+        const fnContentMap = (e) => {
           if(Array.isArray(e.htmlDescription))
             e.htmlDescription = e.htmlDescription.join(" ");
           return e;
-        });
+        }
+        
+        uEducation.content = (<IEducations>uEducation).content.map(fnContentMap);
+        uWorkExperiences.content = (<IWorkExperiences>uWorkExperiences).content.map(fnContentMap);
 
         return {
           'Informations': uInformations,
