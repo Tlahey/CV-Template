@@ -1,27 +1,43 @@
-# Cv
+# CV Template
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
+This is a CV Template with JSON configuration files.
 
-## Development server
+## Prerequired
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Install angular cli globaly
+```
+$ npm install -g @angular/cli@6.2.4
+```
 
-## Code scaffolding
+## Installation
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+First, download dependances :
+```
+$ npm install
+```
 
-## Build
+Build the application with 
+```
+$ ng build
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Now you can go on `dist` folder and open `index.html` on navigator.
 
-## Running unit tests
+Or run a server with 
+```
+$ ng serve
+```
+And open the url `http://localhost:4200`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Configuration
 
-## Running end-to-end tests
+You can configurate you own CV with json files.
+You can find it in `src/assets/json`.
+Each json are linked on a page.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Set a new icon
 
-## Further help
+On the projet I use https://materialdesignicons.com/ for the icons.
+If you want to change an icon, you must prefix the icon with `mdi:` and found the name on the website.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+For example, if I want to have an Nintendo Switch icon (`nintendo-switch`) on my json I must have `mdi:nintendo-switch`.
