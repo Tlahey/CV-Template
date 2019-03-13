@@ -1,3 +1,5 @@
+@import '../../../styleLibrary';
+
 mat-card{
 
   mat-card-header{
@@ -13,8 +15,6 @@ mat-card{
           font-size: 30pt;
           height:30pt;
           width: 30pt;
-
-          
         }
       }
     }
@@ -28,19 +28,36 @@ mat-card{
     &.no-padding{
       padding-left: 0;
     }
-    .custom-content-wrapper{
-    
-      &:not(:first-child){
-        margin-top: 20px;
+
+    .technologies-content{
+      margin-top: -25px;
+      margin-bottom: 15px;
+      mat-chip{
+        mat-icon{
+            transform: scale(1); 
+            fill: $color-grey;
+            &.margin-text{
+                margin-right:6px; 
+            }
+        }
       }
-     
+    }
+
+    .hobbies-content-wrapper{
       mat-icon{
         color: #5da4d9;
         font-size: 30pt;
         height: 30pt;
         width: 30pt;
       }
-  
+    }
+
+    .custom-content-wrapper{
+    
+      &:not(:first-child){
+        margin-top: 20px;
+      }
+
       &:not(:last-child){
         border-bottom: 1px solid #bdbdbd;
         p{
@@ -52,9 +69,10 @@ mat-card{
         margin: 0px;
         font-size: 12pt;
         line-height: 20pt;
-        span{
-          color: #767270;
-        }
+      }
+
+      .company {
+        color: #767270;
       }
   
       span{

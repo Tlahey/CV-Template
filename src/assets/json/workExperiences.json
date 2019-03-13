@@ -2,34 +2,72 @@
     "icon": "business_center",
     "title": "Expériences profesionnelles",
     "content": [{
-        "title": "Ingénieur Informatique",
-        "company": "@groupenumen",
+        "title": "Ingénieur Informatique – full stack (CDI)",
+        "company": "Numen Services",
         "periode": "FEVR 2015 - Aujourd'hui",
         "htmlDescription": [
-            "Ingénieur informatique chez Numen Solutions à Marcq-en-Baroeul. ",
             "<ul>",
-            "<li>Création d’une application de Case Management en mode SAAS.</li>",
-            "<li>Travail en agile, prise de décision, documentation technique / spécification, organisation et planification. </li>",
-            "<li>Mes principales missions ont été d’intégrer les nouvelles technologies de développement aisni que les produits développés par le groupe.</li>",
-            "<li>Principales technologies : Angular, NodeJs, TypeScript, Docker</li>",
-            "</ul>",
-            "Durant mes missons j'ai pu aussi créer un indexeur et un outil de recherche à facette en utilisant ElasticSearch"
-        ] 
+                "<li>Conception et développement des produits de l’offre logiciel Numen : création d’une application web Case Management hébergée en SAAS ou on-premise.</li>",
+                "<li>Utilisation des méthodes Agile Scrum et Pair Programming au sein d’une équipe d’ingénieur informatique.</li>",
+                "<li>Prises de décisions afin d’intégrer de nouvelles technologies dans l’entreprise.</li>",
+                "<li>Rédaction de spécifications techniques et fonctionnelles</li>",
+                "<li>Participation à la mise en œuvre d’un déploiement continu avec Jenkins</li>",
+                "<li>Réalisation de tests (E2E, tests REST …) et recettages</li>",
+                "<li>Revues de codes, optimisations, corrections de bugs</li>",
+                "<li>Veille technologique</li>",
+            "</ul>"
+        ],
+        "technologies": [{
+            "icon": "mdi:angularjs",
+            "name": "AngularJS"
+        }, {
+            "icon": "mdi:language-css3",
+            "name": "CSS"
+        }, {
+            "icon": "mdi:language-typescript",
+            "name": "TypeScript"
+        }, {
+            "icon": "mdi:language-javascript",
+            "name": "Javascript"
+        }, {
+            "icon": "mdi:nodejs",
+            "name": "NodeJs"
+        }, {
+            "icon": "mdi:material-design",
+            "name": "Material Angular"
+        }, {
+            "icon": "custom:cmis",
+            "name": "CMIS"
+        }, {
+            "icon": "custom:postgresql",
+            "name": "PostgreSQL"
+        }, {
+            "icon": null,
+            "name": "ElasticSearch"
+        }, {
+            "icon": "mdi:docker",
+            "name": "Docker"
+        }, {
+            "icon": null,
+            "name": "Activiti"
+        }, {
+            "icon": "custom:swagger",
+            "name": "Swagger"
+        }]
     }, {
-        "title": "Stage développeur informatique",
-        "company": "@groupenumen",
+        "title": "Développeur informatique (Stage)",
+        "company": "Numen Services",
         "periode": "MARS 2014 - SEPT 2014",
         "htmlDescription": [
-            "Stage de 4ème année, la mission était de maintenir l'application GED / SAE, de développer un outil en interne de gestion du temps passé par tâche.", 
             "<ul>",
-            "<li>Aide au développement d'une application de gestion des temps pour l'entreprise en C# </li>",
-            "<li>Test et recettage et corrections de bug reporté sur l'application Easyfolder </li>",
-            "<li>Création d'une application de gestion de compte pour un coffre fort numérique utilisant la norme NF Z42-020</li>",
+                "<li>Maintien et optimisation de l'application web GED / SAE.</li>",
+                "<li>Amélioration de la solution de coffre-fort numérique à valeur probante.</li>",
+                "<li>Développement en interne d’un outil de gestion du temps passé par tâches.</li>",
             "</ul>"
         ]
     }, {
-        "title": "Crédit Agricole Nord de France",
-        "company": "@ca_ndf",
+        "title": "Développeur informatique (CDD)",
+        "company": "Crédit Agricole Nord de France",
         "periode": "JUIL 2013 - AOUT 2013",
         "htmlDescription": [
             "Job de remplacement au siège du Crédit Agricole Nord De France Lille. Mission : Réalisaton d’applicatons pour le CA (Technologie ASPX .NET)",
@@ -42,7 +80,7 @@
         "htmlDescription": [
             "Stage au Point Passerelle (Arras), associaton du Crédit Agricole. </br>",
             "Mission : Amélioraton du site intranet, automatisation des statistiques sous format Pdf / Csv, ajout d’une interface administrateur (Technologie ASP)",
-            "Utilisation de librairiess comme iText"
+            "Utilisation de librairies comme iText pour générer des rapports sur les finances."
         ]
     }]    
 }

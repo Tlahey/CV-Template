@@ -19,8 +19,10 @@
                     background-color: #4783c2;
                     border-radius: 10px;
                     .circle{
-                        height: 16px;
-                        width: 16px;
+                        height: 14px !important;
+                        width: 14px !important;
+                        background-color: #f9f9f9 !important;
+                        top: -4px !important;
                     }
                 }
             }

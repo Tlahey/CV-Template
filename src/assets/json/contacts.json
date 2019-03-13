@@ -16,10 +16,10 @@
     }, {
         "icon": "mdi:at",
         "tooltip": "Mail",
-        "url": "mailto:a.vendeville@orange.fr"
+        "url": "mailto:xxxxxx.yyyyyy@gmail.com"
     }, {
         "icon": "mdi:phone",
         "tooltip": "Téléphone",
-        "url": "tel:0607005168"
+        "url": "tel:0102030405"
     }]
 }

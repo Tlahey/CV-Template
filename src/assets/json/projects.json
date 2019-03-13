@@ -1,9 +1,9 @@
 {
     "title": "Mes projets",
     "projects": [{
-        "title": "RSS",
+        "title": "RSS-Feeds-Reader",
         "htmlDescription": "Application permettant d'écouter des flux RSS et de notifier les pages web de nouveaux contenu grâce à socket.io.",
-        "href": "https://bitbucket.org/Tlahey/rss",
+        "href": "https://github.com/Tlahey/RSS-Feeds-Reader",
         "usedApplications": [{
             "name": "angular 6",
             "icon": "mdi:angular"
@@ -29,7 +29,7 @@
     }, {
         "title": "CV",
         "htmlDescription": "Code source de l'application Web développée en Angular. Ce projet permet de créer son CV à partir d'une template et de modifier les informations à afficher avec des fichiers de configuration au format JSON.",
-        "href": "https://bitbucket.org/Tlahey/cv",
+        "href": "https://github.com/Tlahey/CV-Template",
         "usedApplications": [{
             "name": "Angular 6",
             "icon": "mdi:angular"
@@ -43,7 +43,7 @@
     },{
         "title": "LimitLimit",
         "htmlDescription": "Application tiré du jeu. Utilise un serveur nodeJs et des sessions pour que les utilisateurs puissent jouer sur un même réseau.",
-        "href": "https://bitbucket.org/Tlahey/limitlimit",
+        "href": "https://github.com/Tlahey/Cards-against-humanity",
         "usedApplications": [{
             "name": "NodeJs",
             "icon": "mdi:nodejs"
@@ -60,7 +60,7 @@
     },{
         "title": "Phazer",
         "htmlDescription": "Test web pour une animation de jeu.",
-        "href": "https://bitbucket.org/Tlahey/Phazer",
+        "href": "https://github.com/Tlahey/Phazer-game-engine",
         "usedApplications": [{
             "name": "TypeScript",
             "icon": "mdi:language-typescript"
@@ -74,7 +74,7 @@
     },{
         "title": "AudioProcess",
         "htmlDescription": "Logiciel permettant de traiter les fichiers audio, conversion, ajout des paroles, modification des métadatas / titre.",
-        "href": "https://bitbucket.org/Tlahey/traitementfichiermp3",
+        "href": "https://github.com/Tlahey/processing-music-files-to-mp3",
         "usedApplications": [{
             "name": null,
             "icon": "mdi:language-csharp"

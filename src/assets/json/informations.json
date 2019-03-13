@@ -7,7 +7,7 @@
     },
     "description":{
         "icon": "person",
-        "content": "Né à Douai le 02/07/1991, je suis un passionné d'informatique et cela depuis mon plus jeune âge. C'est bien plus qu'un métier pour moi, j'aime créer et d'aider les gens grâce à mes créations."
+        "content": "Né à Douai le 02/07/1991, je suis un passionné d'informatique et cela, depuis mon plus jeune âge. C'est bien plus qu'un métier pour moi, j'aime créer et d'aider les gens grâce à mes créations."
     },
     "permis": {
         "icon": "directions_car",
@@ -16,25 +16,25 @@
     "phones": {
         "icon": "phone",
         "content": [{
-            "number": "06 07 00 51 68",
-            "legend": "mobile"
+            "number": "01 02 03 04 05",
+            "legend": "Téléphone portable"
         }]
     },
     "emails": {
         "icon": "email",
         "content": [{
-            "email": "a.vendeville@orange.fr",
-            "legend": "personnelle"
+            "email": "xxxxxx.yyyyyyy@gmail.com",
+            "legend": "Adresse email"
         }]   
     },
     "address":{
         "icon": "home",
-        "number": 6,
-        "street": "Rue Rose Valland",
-        "additionalAddress": "(apt B23)",
-        "city": "Marcq-en-Baroeul",
+        "number": 0,
+        "street": "Marcel Pagnol",
+        "additionalAddress": "(apt 2)",
+        "city": "Paris",
         "country": "France",
-        "zipCode": 59700
+        "zipCode": 94000
     },
     "skills": {
         "title": "Compétences majeure",
@@ -72,7 +72,7 @@
             "icon": "mdi:language-typescript"
         }, {
             "skillName": "Docker",
-            "progress": 60,
+            "progress": 80,
             "icon": "mdi:docker"
         }]
     }

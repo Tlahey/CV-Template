@@ -6,5 +6,9 @@ export interface IWorkExperiences {
         company: string,
         periode: string,
         htmlDescription: string | Array<string>
+        technologies: Array<{
+            name: string,
+            icon: string
+        }>
     }>
 }

@@ -5,12 +5,18 @@
         "pannelContent": [
             { "skillName": "HTML 5", "progress": 85, "icon": "mdi:language-html5"},
             { "skillName": "CSS 3 / SASS / LESS", "progress": 80, "icon": "mdi:language-css3"},
-            { "skillName": "AngularJS", "progress": 90, "icon": "mdi:angularjs"},
-            { "skillName": "Angular 2+", "progress": 30, "icon": "mdi:angular"},
-            { "skillName": "TypeScript", "progress": 75, "icon": "mdi:language-typescript"},
+            { "skillName": "TypeScript", "progress": 80, "icon": "mdi:language-typescript"},
             { "skillName": "Javascript", "progress": 85, "icon": "mdi:language-javascript"},
             { "skillName": "JQuery", "progress": 60, "icon": "mdi:jquery"},
             { "skillName": "PHP", "progress": 40, "icon": "mdi:language-php"}
+        ]
+    },
+    {
+        "pannelTitle": "Frameworks",
+        "pannelContent": [
+            { "skillName": "AngularJS", "progress": 90, "icon": "mdi:angularjs"},
+            { "skillName": "Angular 2+", "progress": 50, "icon": "mdi:angular"},
+            { "skillName": "Spring", "progress": 20, "icon": null }
         ]
     },
     {
@@ -71,7 +77,8 @@
         "pannelTitle": "Analyse",
         "pannelContent": [
             { "skillName": "Merise", "progress": 90, "icon": null},
-            { "skillName": "UML", "progress": 90, "icon": null}
+            { "skillName": "UML", "progress": 90, "icon": null},
+            { "skillName": "MEHARI", "progress": 50, "icon": null}
         ]
     },
     {
@@ -96,7 +103,7 @@
     {
         "pannelTitle": "Gestionnaire",
         "pannelContent": [
-            { "skillName": "Docker", "progress": 90, "icon": "mdi:docker"},
+            { "skillName": "Docker", "progress": 80, "icon": "mdi:docker"},
             { "skillName": "Azure", "progress": 40, "icon": "mdi:azure"}
         ]
     },

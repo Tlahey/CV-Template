@@ -8,12 +8,26 @@
       </mat-card-title>
     </mat-card-header>
     <mat-card-content class="custom-content" [ngClass]="{'no-padding': (Informations.hobbies != undefined)}">
-      <div class="custom-content-wrapper" *ngFor="let data of Informations?.content">
-        <h3>{{ data.title }} <span>{{ data.company }}</span></h3>
+      <div class="custom-content-wrapper" *ngFor="let data of Informations?.content" fxLayout="column">
+        <h3>{{ data.title }} </h3>
+        <span class="company">{{ data.company }}</span>
         <span>{{ data.periode }}</span>
+
         <p style="text-align: justify; text-justify: inter-word;" [innerHTML]="data.htmlDescription"></p>
+
+        <!--
+        <div *ngIf="data.technologies != undefined" class="technologies-content">
+            <mat-chip-list  >
+                <mat-chip *ngFor="let technology of data?.technologies">
+                  <mat-icon [svgIcon]="technology.icon" *ngIf="technology.icon != null" [ngClass]="{'margin-text': technology.name != null}"></mat-icon>
+                  {{ technology.name }}
+                </mat-chip>
+              </mat-chip-list>
+        </div>
+        -->
+
       </div>
-      <div class="custom-content-wrapper" *ngIf="Informations.hobbies != undefined" fxLayout="row" fxLayoutAlign="space-evenly center" >
+      <div class="custom-content-wrapper hobbies-content-wrapper" *ngIf="Informations.hobbies != undefined" fxLayout="row" fxLayoutAlign="space-evenly center" >
           <mat-icon *ngFor="let hobbie of Informations?.hobbies" [matTooltip]="hobbie.tooltip">{{ hobbie.icon }}</mat-icon>
       </div>
     </mat-card-content>
